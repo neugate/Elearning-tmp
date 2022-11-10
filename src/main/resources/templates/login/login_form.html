@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+<link th:href="@{/css/login/login.css}" rel="stylesheet"/>
+<script th:href="@{/webjars/jquery/jquery.min.js}" defer></script>
+<script th:href="@{/webjars/bootstrap/js/bootstrap.min.js}" defer></script>
+    <title>Sample_learning</title>
+</head>
+<body>
+	<div layout:fragment="content" class="text-center">
+	 <h1>ログイン</h1>
+	    <form th:action="@{/login/success}" method="post">
+	        コース<br>
+	        <select name="corse">
+	            <option value="dx">DX人材育成&Python 機械学習科</option>
+	            <option value="pyjava">Python Java 複数言語習得科</option>
+	            <option value="python">Python WEB エンジニア養成科</option>
+	            <option value="7thlanguage">プログラミング主要7言語+フレームワーク習得科</option>
+	            <option value="-">-</option>
+	            </select><br>
+	        ユーザーID<font color="#ff0000">※(必須)</font>
+	        <br>
+	        <input type="text" name="user_id" placeholder="xxxxxx"><br>
+	        パスワード<font color="#ff0000">※(必須)</font><br>
+	        <input type="password" name="user_pass" placeholder="●●●●●●"><br>
+	        <br>
+	        <input type="submit" value="Login→">
+	    </form>
+	    <br>
+	</div>
+</body>
+</html>

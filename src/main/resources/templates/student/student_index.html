@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/student_layout}">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/student/student.css}" rel="stylesheet">
+    <title>Sample_learning</title>
+</head>
+<body>
+	<div layout:fragment="content" class="text-center">
+		<main>
+		    <div class="split">
+		        <div class="split-item split-left">
+		            <div class="split-left__inner">
+		                <h1>学習</h1>
+		                <ul>
+		                    <li><a th:href="@{/video/list}">動画一覧</a></li>
+		                    <li>問題</li>
+		                    <li>テスト</li>
+		
+		                </ul>
+		            </div>
+		        </div>
+		        <div class="split-item split-right">
+		            <div class="split-right__inner">
+		                <h1>日報</h1>
+		                <ul>
+		                    <li>資格報告</li>
+		                    <li>就職状況</li>
+		                    
+		
+		                </ul>
+		            </div>
+		        </div>
+		    </div>
+		</main>    
+	</div>
+</body>
+</html>

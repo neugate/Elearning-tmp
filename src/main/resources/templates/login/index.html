@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/layout}">
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+<link th:href="@{/css/login/index.css}" rel="stylesheet"/>
+<title>Sample_learning</title>
+</head>
+<body>
+	<div layout:fragment="content" class="text-center">
+	    <h1 class="">トップページ</h1>
+		    <h2><a th:href="@{/login}">ログイン</a></h2>
+		    <h2><a th:href="@{/register/form}">新規登録</a></h2>
+    </div>
+</body>
+</html>
