@@ -19,9 +19,14 @@ public class StudentController {
 		return "student/diary_list";
 	}
 	
-	@PostMapping("diary-edit")
+	@PostMapping("/diary-edit")
 	public String postDiaryEdit() {
 		return "student/diary_edit";
+	}
+	
+	@GetMapping("/test-list")
+	public String getTestList() {
+		return "student/test_list";
 	}
 	
 }
