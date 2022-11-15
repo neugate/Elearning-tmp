@@ -23,5 +23,13 @@ public class RegisterController {
 	public String postSuccess() {
 		return "register/register_success";
 	}
+	@GetMapping("/reissue")
+	public String getReissue() {
+		return "register/reissue";
+	}
 	
+	@PostMapping("/reissue-success")
+	public String postReissueSuccess() {
+		return "register/reissue_success";
+	}
 }

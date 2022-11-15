@@ -6,37 +6,41 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
-<link th:href="@{/css/login/login.css}" rel="stylesheet"/>
 <script th:href="@{/webjars/jquery/jquery.min.js}" defer></script>
 <script th:href="@{/webjars/bootstrap/js/bootstrap.min.js}" defer></script>
     <title>Sample_learning</title>
 </head>
 <body>
 	<div layout:fragment="content" class="text-center">
-	 <div class="container">
-	 <h1>ログイン</h1>
-	 	<div class="row">
-	 		<div class="col-md-6 bg-light text-left form-group">
-	        <form th:action="@{/login/success}" method="post">
-	 			<label class="font-weight-bold">コース</label><br>
-	 			<select name="corse" class="form-control">
-		            <option value="dx">DX人材育成&Python 機械学習科</option>
-		            <option value="pyjava">Python Java 複数言語習得科</option>
-		            <option value="python">Python WEB エンジニア養成科</option>
-		            <option value="7thlanguage">プログラミング主要7言語+フレームワーク習得科</option>
-		            <option value="-">-</option>
-		        </select><br>
-		        <label>ユーザーID</label><br>
-		        <input type="text" class="form-control" name="user_id" placeholder="xxxxxx"><br>
-	        	<label>パスワード</label><br>
-		        <input type="password" class="form-control" name="user_pass" placeholder="●●●●●●"><br>
-	        	<button type="submit" class="btn btn-success">Log</button>
-	        </form>
-	 		</div>
-	 		<div class="col-md-6">
-	 		会員登録について
-	    	</div>
-	    </div>
+	<h1>ログイン</h1>
+	<div class="container">
+	<div class="box">
+	<div class="row">
+			<div class="col-md-6 bg-light">
+				<div class="well">
+					<form th:action="@{/login/success}" method="post">
+						<div class="form-group text-left">
+							<label class="control-label font-weight-bold">ユーザーID</label>
+							<input type="text" class="form-control" name="user_id" placeholder="xxxxxx">
+						</div>
+						<div class="form-group text-left">
+							<label class="control-label font-weight-bold">パスワード</label>
+							<input type="password" class="form-control" name="user_pass" placeholder="●●●●●●"><br>
+						</div>
+						<button type="submit" class="btn btn-success btn-block">Login</button>
+					</form>
+					<a th:href="@{/register/reissue}">パスワードを忘れた方はこちら</a>
+				</div>
+			</div>
+		<div class="col-md-6">
+			会員登録について
+			<ul>
+				<li></li>
+				<li></li>
+			</ul>
+ 		</div>
+	</div>
+	</div>
 	</div>
 	</div>
 </body>
