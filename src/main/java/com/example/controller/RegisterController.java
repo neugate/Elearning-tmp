@@ -21,7 +21,7 @@ public class RegisterController {
 
 	@PostMapping("/success")
 	public String postSuccess() {
-		return "register/success";
+		return "register/register_success";
 	}
 	
 }
