@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+<link th:href="@{/css/layout/header.css}" rel="stylesheet"/>
+<script th:href="@{/webjars/jquery/jquery.min.js}" defer></script>
+<script th:href="@{/webjars/bootstrap/js/bootstrap.min.js}" defer></script>
+<title></title>
+</head>
+<body>
+	<!-- ヘッダー -->
+	<nav layout:replace="~{layout/trainer_header::header}"></nav>
+	<!-- メニュー -->
+	<div class="container-fluid">
+		<div class="row">
+			<nav class="col-sm-2 bg-secondary sidebar pt-2">
+				<div layout:replace="~{layout/trainer_menu::menu}"></div>
+			</nav>
+ 		</div>
+	</div> 
+	<!-- コンテンツ -->
+   	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-10 offset-sm-2 main">
+				<div layout:fragment="content"></div>
+			</div>
+		</div>
+	</div>
+	<!-- フッター -->
+	<footer class="footer">
+		<div class="container">
+	<hr>
+			<p class="text-center text-muted">Copyright ©jibun-note.com All rights reserved.</p>
+		</div>
+	</footer>
+</body>
+</html>
