@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/student_layout}">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/student/student.css}" rel="stylesheet">
+    <title>Sample_learning - 日報編集</title>
+</head>
+<body>
+	<div layout:fragment="content" class="text-left">
+		<h1>日報編集</h1>
+		<form th:action="@{/student/diary_list}" method="post">
+			<div class="mb-3">		
+				<label class="form-label">日付</label>
+				<input type="text" id="diary_day" class="form-control" placeholder="2022/11/15">
+			</div>
+			<div class="mb-3">		
+				<label class="form-label">・講義内容</label>
+				<input type="text" id="lecture" class="form-control" placeholder="実技">
+			</div>
+			<div class="mb-3">		
+				<label class="form-label">・今回の授業の振り返り</label>
+				<textarea id="q1" class="form-control" rows="5"></textarea>
+			</div>
+			<div class="mb-3">		
+				<label class="form-label">・質問があれば記入してください</label>
+				<textarea id="q2" class="form-control" rows="5"></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary">更新</button>
+		</form> 
+	
+	</div>
+</body>
+</html>

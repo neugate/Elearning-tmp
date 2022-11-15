@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/student_layout}">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/student/student.css}" rel="stylesheet">
+    <title>Sample_learning - テスト一覧</title>
+</head>
+<body>
+<div layout:fragment="content">
+<div class="container">
+<div class="bg-info text-left text-white">
+<h2>テスト</h2>
+<h1>eラーニング テスト</h1>
+<br>
+<p>仮）テスト一覧表示ページです</p>
+<br>
+</div>
+</div>
+
+<div class="d-flex flex-column p-3 bg-light" style="width: 280px;">
+	<a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-non">
+		<svg class="bi me-2" width="40" height="32"></svg>
+		<span class="fs-4">テスト一覧</span>
+	</a>
+	<hr>
+	<ul class="nav nav-pills flex-column mb-auto">
+		<li class="nav-item">a</li>
+		<li class="nav-item">a</li>
+		<li class="nav-item">a</li>
+	</ul>
+	<hr>
+	<div class="dropdown">d</div>
+</div>
+
+<div class="b-example-divider">a</div>
+
+<div class="bg-dark">
+</div>
+</body>
+</html>
