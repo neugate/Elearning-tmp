@@ -23,4 +23,10 @@ public class TrainerController {
 		return "trainer/student_list";
 	}
 	
+	@GetMapping("/student-list/detail-student")
+	public String getDetailStudent() {
+		return "trainer/detail_student";
+	}
+	
+	
 }
