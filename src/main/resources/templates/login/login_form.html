@@ -17,6 +17,7 @@
 	 <h1>ログイン</h1>
 	 	<div class="row">
 	 		<div class="col-md-6 bg-light text-left form-group">
+	        <form th:action="@{/login/success}" method="post">
 	 			<label class="font-weight-bold">コース</label><br>
 	 			<select name="corse" class="form-control">
 		            <option value="dx">DX人材育成&Python 機械学習科</option>
@@ -29,7 +30,8 @@
 		        <input type="text" class="form-control" name="user_id" placeholder="xxxxxx"><br>
 	        	<label>パスワード</label><br>
 		        <input type="password" class="form-control" name="user_pass" placeholder="●●●●●●"><br>
-	        	<button type="submit" class="btn btn-success">Login</button>
+	        	<button type="submit" class="btn btn-success">Log</button>
+	        </form>
 	 		</div>
 	 		<div class="col-md-6">
 	 		会員登録について
