@@ -2,6 +2,7 @@ package com.example.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -12,4 +13,15 @@ public class StudentController {
 	public String getStudentIndex() {
 		return "student/student_index";
 	}
+	
+	@GetMapping("/diary-list")
+	public String getDiaryList() {
+		return "student/diary_list";
+	}
+	
+	@PostMapping("diary-edit")
+	public String postDiaryEdit() {
+		return "student/diary_edit";
+	}
+	
 }

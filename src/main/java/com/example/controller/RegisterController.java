@@ -28,8 +28,8 @@ public class RegisterController {
 		return "register/reissue";
 	}
 	
-	@PostMapping("/ressue-success")
+	@PostMapping("/reissue-success")
 	public String postReissueSuccess() {
-		return "register/ressue_success";
+		return "register/reissue_success";
 	}
 }
