@@ -16,7 +16,7 @@
 	 <div class="container">
 	 <h1>ログイン</h1>
 	 	<div class="row">
-	 		<div class="col-md-6 bg-light text-left form-group">
+	 		<div class="col-md-6 bg-light text-center form-group">
 	        <form th:action="@{/login/success}" method="post">
 	 			<label class="font-weight-bold">コース</label><br>
 	 			<select name="corse" class="form-control">
@@ -26,12 +26,13 @@
 		            <option value="7thlanguage">プログラミング主要7言語+フレームワーク習得科</option>
 		            <option value="-">-</option>
 		        </select><br>
-		        <label>ユーザーID</label><br>
+		        <label class="font-weight-bold">ユーザーID</label><br>
 		        <input type="text" class="form-control" name="user_id" placeholder="xxxxxx"><br>
-	        	<label>パスワード</label><br>
+	        	<label class="font-weight-bold">パスワード</label><br>
 		        <input type="password" class="form-control" name="user_pass" placeholder="●●●●●●"><br>
-	        	<button type="submit" class="btn btn-success">Log</button>
+	        	<button type="submit" class="btn btn-success">Login</button>
 	        </form>
+	        <a th:href="@{/register/reissue}">パスワードを忘れた方はこちら</a>
 	 		</div>
 	 		<div class="col-md-6">
 	 		会員登録について
