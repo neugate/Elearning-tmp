@@ -1,6 +1,6 @@
-input,select{
+/*input,select{
     width: 300px;
-}
+}*/
 
 .collapse{margin-left: 70%;}
 
@@ -17,6 +17,6 @@ img {
     
 }
 
-.postal_code,.certification{
+/*.postal_code,.certification{
     width: 250px;
-}
+}*/

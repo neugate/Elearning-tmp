@@ -13,25 +13,29 @@
 </head>
 <body>
 	<div layout:fragment="content" class="text-center">
+	 <div class="container">
 	 <h1>ログイン</h1>
-	    <form th:action="@{/login/success}" method="post">
-	        コース<br>
-	        <select name="corse">
-	            <option value="dx">DX人材育成&Python 機械学習科</option>
-	            <option value="pyjava">Python Java 複数言語習得科</option>
-	            <option value="python">Python WEB エンジニア養成科</option>
-	            <option value="7thlanguage">プログラミング主要7言語+フレームワーク習得科</option>
-	            <option value="-">-</option>
-	            </select><br>
-	        ユーザーID<font color="#ff0000">※(必須)</font>
-	        <br>
-	        <input type="text" name="user_id" placeholder="xxxxxx"><br>
-	        パスワード<font color="#ff0000">※(必須)</font><br>
-	        <input type="password" name="user_pass" placeholder="●●●●●●"><br>
-	        <br>
-	        <input type="submit" value="Login→">
-	    </form>
-	    <br>
+	 	<div class="row">
+	 		<div class="col-md-6 bg-light text-left form-group">
+	 			<label class="font-weight-bold">コース</label><br>
+	 			<select name="corse" class="form-control">
+		            <option value="dx">DX人材育成&Python 機械学習科</option>
+		            <option value="pyjava">Python Java 複数言語習得科</option>
+		            <option value="python">Python WEB エンジニア養成科</option>
+		            <option value="7thlanguage">プログラミング主要7言語+フレームワーク習得科</option>
+		            <option value="-">-</option>
+		        </select><br>
+		        <label>ユーザーID</label><br>
+		        <input type="text" class="form-control" name="user_id" placeholder="xxxxxx"><br>
+	        	<label>パスワード</label><br>
+		        <input type="password" class="form-control" name="user_pass" placeholder="●●●●●●"><br>
+	        	<button type="submit" class="btn btn-success">Login</button>
+	 		</div>
+	 		<div class="col-md-6">
+	 		会員登録について
+	    	</div>
+	    </div>
+	</div>
 	</div>
 </body>
 </html>

@@ -5,12 +5,32 @@
 <head>
     <meta charset="UTF-8">
     <link th:href="@{/css/register/register.css}" rel="stylesheet">
-    <title>Sample_learning</title>
+    <title>Sample_learning - 登録確認画面</title>
 </head>
 <body>
 	<div layout:fragment="content" class="text-center">
 		<h1>登録確認</h1>
 	    <div class="container">
+	    	<div class="row">
+	    		<div class="col">
+	        	<form th:action="@{/register/success}" method="post">
+	    		<ul class="list-group">
+	    			<li class="list-group-item">コース : DX人材育成&Python 機械学習科</li>
+	    			<li class="list-group-item">ユーザーID : xxxxxx</li>
+	    			<li class="list-group-item">名前 : 山田太郎</li>
+	    			<li class="list-group-item">メールアドレス : yamada@gmail.com</li>
+	    			<li class="list-group-item">電話番号 : 000-0000-0000</li>
+	    			<li class="list-group-item">住所 : </li>
+	    			<li class="list-group-item">現在取得している資格 : ITパスポート</li>
+	    		</ul>
+	    		<br>
+	    		<a class="btn btn-secondary" th:href="@{/register/form}">Back</a>
+	    		<button type="submit" class="btn btn-primary">SignUp</button>
+	    		</form>
+	    		</div>
+	    		
+	    	</div>
+<!-- 
 	        <form th:action="@{/register/success}" method="post">
 	            コース<br>
 	            <select name="corse">
@@ -53,9 +73,10 @@
 	                <input type="text" class="certification" name="certification" placeholder="ITパスポート">
 	                <button type="button">add</button><br>
 	            <br>
-	            <a th:href="@{/register/form}"><button type="button">←Back</button></a>
-	            <input type="submit" value="SignUp">
+	            <a class="btn btn-secondary" th:href="@{/register/form}">Back</a>
+	           	<button type="submit" class="btn btn-primary">SignUp</button>
 	        </form>
+	            -->
 	        <br>
 	    </div>
 	</div>
