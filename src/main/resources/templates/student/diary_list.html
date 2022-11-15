@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/student_layout}">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/student/student.css}" rel="stylesheet">
+    <title>Sample_learning - 日報一覧</title>
+</head>
+<body>
+	<div layout:fragment="content" class="text-center">
+<h1>日報</h1>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th scope="col">年/月/日</th>
+				<th scope="col">内容</th>
+				<th scope="col">編集</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>1</th>
+				<th scope="row">2022/11/15</th>
+				<th scope="row">〇〇〇〇</th>
+				<th>
+				<form th:action="@{/student/diary-edit}" method="post">
+				<input type="hidden" name="diary-num">
+				<button class="btn btn-info">編集</button>
+				</form>
+				</th>
+			</tr>
+			<tr>
+				<th>2</th>
+				<th scope="row">2022/11/1</th>
+				<th scope="row">××××</th>
+				<th>
+				<form th:action="@{/student/diary-edit}" method="post">
+				<input type="hidden" name="diary-num">
+				<button class="btn btn-info">編集</button>
+				</form>
+				</th>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
+</html>
