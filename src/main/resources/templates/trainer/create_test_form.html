@@ -7,53 +7,55 @@
 <body>
 
 <!--  選択したファイルのプレビューを描画-->
- <script>
-        function previewImage(obj)
-        {
-            var fileReader = new FileReader();
-            fileReader.onload = (function() {
-                var canvas = document.getElementById('preview');
-                var ctx = canvas.getContext('2d');
-                var image = new Image();
-                image.src = fileReader.result;
-                image.onload = (function () {
-                    canvas.width = image.width;
-                    canvas.height = image.height;
-                    ctx.drawImage(image, 0, 0);
-                });
-            });
-            fileReader.readAsDataURL(obj.files[0]);
-        }
-        </script>
+ 
 
 <main>
 
 
 <h1>テスト作成フォーム</h1>
 
+<button id="add">　＋　</button>
+<form th:action="@{/login/}" method="post">
+        
+        
+        <div id="target">
+            <div>
+                <hr>
+                <input type="text"><br>
+                <br>
+                <textarea name="" id="" cols="100" rows="5"></textarea><br>
+                <input type="file">
+                <h5>選択肢</h5>
+                <input type="checkbox"><input type="text">
+                <input type="checkbox"><input type="text">
+                <input type="checkbox"><input type="text">
+                <input type="checkbox"><input type="text">
+
+                <h5>回答</h5>
+                <input type="text">
 
 
-<p>
-    Preview:<br>
-    <canvas id="preview" style="max-width:200px;"></canvas>
-    </p>
+                <!-- <input type="text"> -->
+                <hr>
+                
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            // 要素をコピー＆追加する関数
+            function addExample() {
+                let elements = document.getElementById("target");
+                let copied = elements.lastElementChild.cloneNode(true);
+                elements.appendChild(copied);
+            }
+            
+            // ボタンにイベントハンドラをセット
+            const btn = document.getElementById("add");
+            btn.addEventListener("click", addExample, false);
+            
+        </script>
 
-<form th:action="@{/login/success}" method="post">
-    <label class="font-weight-bold">動画ファイル</label><br>
-    <input type="file" class="form-control" name="user_pass" accept='image/*' onchange="previewImage(this);"><br>
 
-
-    <label class="font-weight-bold">サムネイル</label><br>
-    <input type="file" class="form-control" name="user_pass" placeholder="java_part1.png"><br>
-    <label class="font-weight-bold">タイトル</label><br>
-    <input type="text" class="form-control" name="user_pass" placeholder="java入門 PART1"><br>
-    <label class="font-weight-bold">コース</label><br>
-    
-   <label class="font-weight-bold">概要欄</label><br>
-   <textarea name="text" id="" cols="30" rows="10"></textarea><br>
-  
-   <button type="submit" class="btn btn-success">登録</button>
-</form>
 </main>
 </body>
 </html>
