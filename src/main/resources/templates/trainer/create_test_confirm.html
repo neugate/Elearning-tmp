@@ -1,64 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/trainer_layout}">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+<!--     <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
+    <title>Sample_learning</title>
 </head>
 <body>
-
-<!--  選択したファイルのプレビューを描画-->
- 
-
-<main>
-
-
-
-<h1>テスト作成確認画面</h1>
-                <hr>
-                <table>
-
-                <tr>
-                   <th>問題１</th>
-                </tr>
-                <tr>
-                   <th>次のうちコンパイルエラーが起きるものはどれか。2つ選べ。</th>
-                </tr>
-                <tr>
-                   <th>1.char str = “a”;</th>
-                </tr>
-                <tr>
-                   <th>2.char c = ‘c’;</th>
-                </tr>
-                <tr>
-                   <th>3.char c = ‘\uabcd’;</th>
-                </tr>
-                <tr><th></th></tr>
-                <tr>
-                   <th>4.char a = ‘xyz’;</th>
-                </tr>
-                
-                <tr>
-
-                    <th>回答</th>
-                </tr>
-                <tr>
-                <th>char str = “a”; , char a = ‘xyz’;</th>
-                </tr>
-                </table>
-                <!-- <input type="text"> -->
-                <hr>
-
-
-    
-
-    
-<form action="" >
-<button  class="btn btn-success" name="__send" id="__send">戻る</button>
-<button type="submit" class="btn btn-success" name="__send" id="__send">登録</button>
-</form>
-
-
-
-</main>
+	<div layout:fragment="content" >
+		<main>
+		    <div class="split">
+		        <div class="split-item split-left">
+		            <div class="split-left__inner">
+		                
+										               
+					 	 <h1>テスト作成確認画面</h1>
+			                <hr>
+			               <form th:action="@{/register/success}" method="post">
+				    		<ul class="list-group">
+				    			<li class="list-group-item">問題１</li>
+				    			<li class="list-group-item">次のうちコンパイルエラーが起きるものはどれか。2つ選べ。</li>
+				    			<li class="list-group-item">>1.char str = “a”;</li>
+				    			<li class="list-group-item">2.char c = ‘c’;</li>
+				    			<li class="list-group-item">3.char c = ‘\uabcd’;</li>
+				    			<li class="list-group-item">>4.char a = ‘xyz’; </li>
+				    			<li class="list-group-item">回答</li>
+				    			<li class="list-group-item">char str = “a”; , char a = ‘xyz’;</li>
+				    		</ul>
+				    		<br>
+				    		<a class="btn btn-secondary" th:href="@{/register/form}">戻る</a>
+				    		<button type="submit" class="btn btn-primary">登録</button>
+			                   
+			              
+			             
+     
+		                
+		            </div>
+		        </div>
+		       </div>
+		</main>    
+	</div>
 </body>
 </html>

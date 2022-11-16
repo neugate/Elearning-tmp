@@ -12,4 +12,6 @@ public class VideoController {
 	public String getVideoList() {
 		return "video/list";
 	}
+	
+	
 }

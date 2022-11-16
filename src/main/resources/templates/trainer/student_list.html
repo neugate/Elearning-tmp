@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/trainer_layout}">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+<!--     <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
+    <title>Sample_learning</title>
 </head>
 <body>
-
-  <table class="table">
+	<div layout:fragment="content" class="text-center">
+		<main>
+		    <div class="split">
+		        <div class="split-item split-left">
+		            <div class="split-left__inner">
+		                <h1>講師用マイページ</h1>
+		                <table class="table">
         <thead>
           <tr>
             <th scope="col">#</th>
             <th scope="col">名前</th>
             <th scope="col">コース名</th>
             <th scope="col">入校日</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
           
           </tr>
         </thead>
@@ -22,6 +32,8 @@
             <td>山田太郎</td>
             <td>〇〇Python</td>
             <td>y/m/d</td>
+            <td><a th:href="@{/trainer/student-list/detail-student}">編集</a></td>
+            <td><button>削除</button></td>
             
           </tr>
           <tr>
@@ -29,6 +41,8 @@
             <td>東京太郎</td>
             <td>〇〇Python</td>
             <td>y/m/d</td>
+            <td><button >編集</button></td>
+            <td><button>削除</button></td>
            
           </tr>
           <tr>
@@ -36,13 +50,19 @@
             <td>埼玉二郎</td>
             <td>〇〇Python</td>
             <td>y/m/d</td>
+            <td><button>編集</button></td>
+            <td><button>削除</button></td>
             
            
           </tr>
         </tbody>
       </table>
-
-
-
+<button>戻る</button>
+		                
+		            </div>
+		        </div>
+		       </div>
+		</main>    
+	</div>
 </body>
 </html>
