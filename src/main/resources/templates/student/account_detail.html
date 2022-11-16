@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/student_layout}">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/student/student.css}" rel="stylesheet">
+    <title>Sample_learning - アカウント設定</title>
+</head>
+
+
+
+<body>
+	<div layout:fragment="content" class="text-center">
+	    <h1>ユーザー情報</h1>
+	    <div class="container">
+	        <form th:action="@{/register/confirm}" method="post">
+	        	<div class="form-group">
+	        	<label>コース
+	          
+	                <option value="7thlanguage">プログラミング主要7言語+フレームワーク習得科</option></label><br>
+	            <label>ユーザーID
+	            <class="form-control" name="user_id" placeholder="xxxxxx"></label><br>
+	            <label>名前
+	            <class="form-control" name="user_name" placeholder="山田太郎"></label><br>
+	            <label>メールアドレス:yamada@gmail.com
+	            </label><br>
+	            <label>電話番号
+	            <input type="tel" class="form-control" name="user_name" placeholder="000-0000-0000"></label><br>
+	            <label>郵便番号
+	            <class="form-control" name="postal_code" data-minlength="7" data-maxlength="8" pattern="\d*" autocomplete="shipping postal-code"></label><br>
+	      
+	            <label>都道府県
+		            <select class="form-control" name="prefecture" autocomplete="shipping address-level1">
+		                <option value="東京都">東京都</option></label><br>
+		            </select>
+		        <label>市区町村
+	            <class="form-control" name="city" autocomplete="shipping address-level2"></label><br>
+	            <label>町名・番地
+	            <class="form-control" name="address1" autocomplete="shipping address-line1"></label><br>
+	            <label>建物名等
+	            <class="form-control" name="address2" autocomplete="shipping address-line2"></label><br>
+	            <span>現在取得している資格</span>
+	            <class="form-control" name="certification" placeholder="ITパスポート">
+	            <!-- class="certification"  -->
+	
+	            </div>
+	            
+	            <a class="nav-link" th:href="@{/student/account-edit}">アカウント情報編集</a><br><br><br>
+	        </form>
+	        <br>
+	    </div>
+    </div>
+</body>
+</html>

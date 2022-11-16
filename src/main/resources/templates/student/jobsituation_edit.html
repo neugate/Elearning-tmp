@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/student_layout}">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/student/student.css}" rel="stylesheet">
+    <title>Sample_learning - 就職活動情報登録</title>
+</head>
+<body>
+	<div layout:fragment="content" class="text-left">
+		<h1>就職活動情報編集・登録</h1>
+		<form th:action="@{/student/jobsituation-detail}" method="get">
+			<div class="mb-3">		
+				<label class="form-label">日付
+				<input type="text" id="diary_day" class="form-control" placeholder="2022/11/15"></label>
+			</div>
+			
+			<div class="mb-3">		
+				<label class="form-label">就職希望詳細(期日、職種、優先項目)</label>
+				<input type="text" id="have_sikaku" class="form-control" placeholder="明日までにフルスタックエンジニアになって月収１０００万">
+			</div>
+			
+			
+			<div class="mb-3">		
+				<label class="form-label">就職活動予定（面接予定や就職活動方法）</label>
+				<input type="text" id="take_sikaku" class="form-control" placeholder="Green登録済み、ハローワーク">
+			</div>
+			<div class="mb-3">		
+				<label class="form-label">その他</label>
+				<textarea id="q2" class="form-control" rows="5"></textarea>
+			</div>
+			<button type="button" onclick="alert('☆登録しました☆')" class="btn btn-primary">登録</button><br><br><br><br>
+		</form> 
+	
+	</div>
+</body>
+</html>
