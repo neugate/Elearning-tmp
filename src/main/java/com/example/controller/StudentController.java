@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/student") //URL接頭辞
 public class StudentController {
+	/**  なんとなくダミーページ   */
+	@GetMapping("/dummy1")
+	public String getDummy1() {
+		return "student/dummy1";
+	}
 	
 	@GetMapping("/index")
 	public String getStudentIndex() {
