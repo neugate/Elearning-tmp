@@ -17,32 +17,32 @@
 		                
 										               
 						 <button id="add">　＋　</button>
-		<form th:action="@{/trainer/create-test-confirm}" method="post">
-        
-        
-        <div id="target">
-            <div>
-                <hr>
-                <input type="text" placeholder="問題１"><br>
-                <br>
-                <textarea name="" id="" cols="100" rows="2"placeholder="次のうちコンパイルエラーが起きるものはどれか。2つ選べ。"></textarea><br>
-                <input type="file">
-                <h5>選択肢</h5>
-                <input type="checkbox"><input type="text" placeholder="char str = “a”;">
-                <input type="checkbox"><input type="text" placeholder="char c = ‘c’;">
-                <input type="checkbox"><input type="text" placeholder="char c = ‘\uabcd’;">
-                <input type="checkbox"><input type="text" placeholder="char a = ‘xyz’;">
-
-                <h5>回答</h5>
-                <input type="text" placeholder="char str = “a”; , char a = ‘xyz’;">
-
-
-                <!-- <input type="text"> -->
-                <hr>
-                	<label id="sub">
-		    <button type="submit" class="btn btn-success" name="__send" id="__send">登録</button>
-		</label>
-</form>
+							<form th:action="@{/trainer/create-test-confirm}" method="post">      
+						        <div id="target">
+						            <div>
+						                <hr>
+						                <input type="text" placeholder="問題１"><br>
+						                <br>
+						                <textarea name="" id="" cols="100" rows="2"placeholder="次のうちコンパイルエラーが起きるものはどれか。2つ選べ。"></textarea><br>
+						                <input type="file">
+						                <h5>選択肢</h5>
+						                <input type="checkbox"><input type="text" placeholder="char str = “a”;">
+						                <input type="checkbox"><input type="text" placeholder="char c = ‘c’;">
+						                <input type="checkbox"><input type="text" placeholder="char c = ‘\uabcd’;">
+						                <input type="checkbox"><input type="text" placeholder="char a = ‘xyz’;">
+						
+						                <h5>回答</h5>
+						                <input type="text" placeholder="char str = “a”; , char a = ‘xyz’;">
+					                </div>
+				                </div>
+						
+						
+						                <!-- <input type="text"> -->
+						                <hr>
+						                	<label id="sub">
+								    <button type="submit" class="btn btn-success" name="__send" id="__send">登録</button>
+										</label>
+							</form>
 			
             </div>
         </div>
