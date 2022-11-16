@@ -28,5 +28,21 @@ public class StudentController {
 	public String getTestList() {
 		return "student/test_list";
 	}
+	@GetMapping("/account-menu")
+	public String getAccountMenu() {
+		return "student/account_menu";
+	}
+	@GetMapping("/account-edit")
+	public String getAccountEdit() {
+		return "student/account_edit";
+	}
+	@GetMapping("/sikaku-edit")
+	public String getSikakuEdit() {
+		return "student/sikaku_edit";
+	}
+	@GetMapping("/jobsituation-edit")
+	public String getJobsituationEdit() {
+		return "student/jobsituation_edit";
+	}
 	
 }

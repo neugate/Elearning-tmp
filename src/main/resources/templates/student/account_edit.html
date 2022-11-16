@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/student_layout}">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/student/student.css}" rel="stylesheet">
+    <title>Sample_learning - アカウント設定メニュー</title>
+</head>
+
+
+
+<body>
+	<div layout:fragment="content" class="text-center">
+	    <h1>ユーザー情報更新</h1>
+	    <div class="container">
+	        <form th:action="@{/register/confirm}" method="post">
+	        	<div class="form-group">
+	        	<label>コース<font color="#ff0000">※(必須)</font></label>
+	            <select name="corse" class="form-control">
+	                <option value="-">選択してください</option>
+	                <option value="dx">DX人材育成&Python 機械学習科</option>
+	                <option value="pyjava">Python Java 複数言語習得科</option>
+	                <option value="python">Python WEB エンジニア養成科</option>
+	                <option value="7thlanguage">プログラミング主要7言語+フレームワーク習得科</option>
+	            </select><br>
+	            <label>ユーザーID<font color="#ff0000">※(必須)</font></label>
+	            <input type="text" class="form-control" name="user_id" placeholder="xxxxxx"><br>
+	            <label>名前<font color="#ff0000">※(必須)</font></label>
+	            <input type="text" class="form-control" name="user_name" placeholder="山田太郎"><br>
+	            <label>メールアドレス<font color="#ff0000">※(必須)</font></label>
+	            <input type="email" class="form-control" name="user_name" placeholder="yamada@gmail.com"><br>
+	            <label>電話番号<font color="#ff0000">※(必須)</font></label>
+	            <input type="tel" class="form-control" name="user_name" placeholder="000-0000-0000"><br>
+	            <label>郵便番号<font color="#ff0000">※(必須)</font></label>
+	            <input type="text" class="form-control" name="postal_code" data-minlength="7" data-maxlength="8" pattern="\d*" autocomplete="shipping postal-code">
+	            <button class="btn btn-secondary">検索</button><br>
+	            <label>都道府県<font color="#ff0000">※(必須)</font></label><br>
+		            <select class="form-control" name="prefecture" autocomplete="shipping address-level1">
+		                <option value="東京都">東京都</option>
+		            </select><br>
+		        <label>市区町村<font color="#ff0000">※(必須)</font></label>
+	            <input type="text" class="form-control" name="city" autocomplete="shipping address-level2"><br>
+	            <label>町名・番地<font color="#ff0000">※(必須)</font></label>
+	            <input type="text" class="form-control" name="address1" autocomplete="shipping address-line1"><br>
+	            <label>建物名等</label><br>
+	            <input type="text" class="form-control" name="address2" autocomplete="shipping address-line2"><br>
+	            <span>現在取得している資格</span><br>
+	            <input type="text" class="form-control" name="certification" placeholder="ITパスポート">
+	            <!-- class="certification"  -->
+	            <button class="btn btn-secondary">add</button><br>
+	            </div>
+	            <br>
+	            <button type="submit" class="btn btn-primary">Next</button>
+	        </form>
+	        <br>
+	    </div>
+    </div>
+</body>
+</html>
