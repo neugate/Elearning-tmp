@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/student") //URL接頭辞
 public class StudentController {
-	/**  なんとなくダミーページ   */
+	/**  なんとなくダミーページ(iframe用)   */
 	@GetMapping("/dummy1")
 	public String getDummy1() {
 		return "student/dummy1";
