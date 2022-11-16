@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AdminController {
 
 	@GetMapping("/index")
-	public String getMyVideo() {
-		return "/admin/admin_index";
+	public String getAdmin() {
+		return "admin/admin_index";
 	}
 	
 	
