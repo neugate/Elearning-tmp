@@ -1,45 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/trainer_layout}">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+<!--     <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
+    <title>Sample_learning</title>
 </head>
 <body>
-
-<!--  選択したファイルのプレビューを描画-->
- 
-
-<main>
-
-
-<h1>テスト作成フォーム</h1>
-
-<button id="add">　＋　</button>
-<form th:action="@{/login}" method="post">
+	<div layout:fragment="content" >
+		<main>
+		    <div class="split">
+		        <div class="split-item split-left">
+		            <div class="split-left__inner">
+		                <h1>講師用マイページ</h1>
+		                
+										               
+						 <button id="add">　＋　</button>
+		<form th:action="@{/trainer/create-test-confirm}" method="post">
         
         
         <div id="target">
             <div>
                 <hr>
-                <input type="text"><br>
+                <input type="text" placeholder="問題１"><br>
                 <br>
-                <textarea name="" id="" cols="100" rows="5"></textarea><br>
+                <textarea name="" id="" cols="100" rows="2"placeholder="次のうちコンパイルエラーが起きるものはどれか。2つ選べ。"></textarea><br>
                 <input type="file">
                 <h5>選択肢</h5>
-                <input type="checkbox"><input type="text">
-                <input type="checkbox"><input type="text">
-                <input type="checkbox"><input type="text">
-                <input type="checkbox"><input type="text">
+                <input type="checkbox"><input type="text" placeholder="char str = “a”;">
+                <input type="checkbox"><input type="text" placeholder="char c = ‘c’;">
+                <input type="checkbox"><input type="text" placeholder="char c = ‘\uabcd’;">
+                <input type="checkbox"><input type="text" placeholder="char a = ‘xyz’;">
 
                 <h5>回答</h5>
-                <input type="text">
+                <input type="text" placeholder="char str = “a”; , char a = ‘xyz’;">
+
 
                 <!-- <input type="text"> -->
                 <hr>
-                
+                	<label id="sub">
+		    <button type="submit" class="btn btn-success" name="__send" id="__send">登録</button>
+		</label>
+</form>
+			
             </div>
         </div>
-        </form>
+        
         <script type="text/javascript">
             // 要素をコピー＆追加する関数
             function addExample() {
@@ -53,8 +60,16 @@
             btn.addEventListener("click", addExample, false);
             
         </script>
-
-
-</main>
+    
+				 
+						  
+						  
+              
+		                
+		            </div>
+		        </div>
+		       </div>
+		</main>    
+	</div>
 </body>
 </html>

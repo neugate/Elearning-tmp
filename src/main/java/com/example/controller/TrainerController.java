@@ -2,6 +2,7 @@ package com.example.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
@@ -29,18 +30,23 @@ public class TrainerController {
 	}
 	
 	@GetMapping("/create-test-form")
-	public String getCreateTestForm() {
-		return "/create_test_form";
+	public String postCreateTestForm() {
+		return "trainer/create_test_form";
+	}
+	
+	@PostMapping("/create-test-confirm")
+	public String getCreateTestConfirm() {
+		return "trainer/create_test_confirm";
 	}
 	
 	@GetMapping("/my-video")
 	public String getMyVideo() {
-		return "/my_video";
+		return "video/my_video";
 	}
 	
 	@GetMapping("trainer-account")
 	public String getTrainerAccount() {
-		return "/trainer_account";
+		return "trainer/trainer_account";
 	}
 	
 	
