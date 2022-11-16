@@ -16,16 +16,18 @@
 		<div layout:fragment="content" class="text-center">
 		<h1>アカウント設定</h1>
 		
-				<a class="nav-link" th:href="@{/student/account-edit}">アカウント情報編集</a>
+				<a class="nav-link" th:href="@{/student/account-detail}">アカウント情報</a>
+
 		
-				<a class="nav-link" th:href="@{/student/sikaku-edit}">資格情報</a>
-		
+				<a class="nav-link" th:href="@{/student/sikaku-detail}">資格情報</a>
+
 	
-				<a class="nav-link" th:href="@{#}">就活状況</a>
+				<a class="nav-link" th:href="@{/student/jobsituation-detail}">就活状況</a>
+				
 			
-				<a class="nav-link" th:href="@{/index}">Home</a>
+				<a class="nav-link" th:href="@{/index}">/index</a>
 			
-				<a class="nav-link" th:href="@{student/index}">student/indexへ</a>
+				<a class="nav-link" th:href="@{/student/index}">/student/indexへ</a>
 		
 		</div>
 </body>

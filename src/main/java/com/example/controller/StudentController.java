@@ -45,4 +45,18 @@ public class StudentController {
 		return "student/jobsituation_edit";
 	}
 	
+	@GetMapping("/account-detail")
+	public String getAccountDetail() {
+	    return "student/account_detail";
+	}
+	@GetMapping("/sikaku-detail")
+	public String getSikakuDetail() {
+	    return "student/sikaku_detail";
+	}
+	@GetMapping("/jobsituation-detail")
+	public String getJobsituationDetail() {
+	    return "student/jobsituation_detail";
+	}
+
+	
 }

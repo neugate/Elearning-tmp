@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/student_layout}">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/student/student.css}" rel="stylesheet">
+    <title>Sample_learning - 就職活動情報</title>
+</head>
+<body>
+	<div layout:fragment="content" class="text-left">
+		<h1>就職活動情報</h1>
+		
+			<div class="mb-3">		
+				<label class="form-label">日付 : 2022/11/15
+				
+			</div>
+			
+			<div class="mb-3">		
+				<label class="form-label">就職希望詳細(期日、職種、優先項目) : 明日までにフルスタックエンジニアになって月収１０００万</label>
+				
+			
+			
+			<div class="mb-3">		
+				<label class="form-label">就職活動予定（面接予定や就職活動方法） : Green登録済み、ハローワーク</label>
+			
+			</div>
+			<div class="mb-3">		
+				<label class="form-label">その他</label>
+				
+			</div>
+			<a class="nav-link" th:href="@{/student/jobsituation-edit}">就活状況編集</a><br><br><br>
+	
+	</div>
+</body>
+</html>

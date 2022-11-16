@@ -5,16 +5,15 @@
 <head>
     <meta charset="UTF-8">
     <link th:href="@{/css/student/student.css}" rel="stylesheet">
-    <title>Sample_learning - アカウント設定メニュー</title>
+    <title>Sample_learning - アカウント設定</title>
 </head>
 
 
 
 <body>
 	<div layout:fragment="content" class="text-center">
-	    <h1>ユーザー情報更新</h1>
-	    <div class="container">
-	        <form th:action="@{/register/confirm}" method="post">
+	    <h1>アカウント情報の変更</h1>
+	    <div class="container"> <form th:action="@{/register/confirm}" method="post">
 	        	<div class="form-group">
 	        	<label>コース<font color="#ff0000">※(必須)</font></label>
 	            <select name="corse" class="form-control">
@@ -51,8 +50,8 @@
 	            <button class="btn btn-secondary">add</button><br>
 	            </div>
 	            <br>
-	            <button type="submit" class="btn btn-primary">Next</button>
-	        </form>
+	           			<button type="button" onclick="alert('☆登録しました☆')" class="btn btn-primary">登録</button><br><br><br><br>
+	   
 	        <br>
 	    </div>
     </div>
