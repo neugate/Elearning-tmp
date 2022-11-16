@@ -1,65 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+		layout:decorate="~{layout/trainer_layout}">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/video/video.css}" rel="stylesheet"/>
+    <script type="text/javascript" th:src="@{/static/js/video.js}"></script>
+    <!-- link th:href="@{/css/.css}" rel="stylesheet" -->
+    <title>Sample_learning</title>
 </head>
 <body>
-    <script>
-        function previewImage(obj)
-        {
-            var fileReader = new FileReader();
-            fileReader.onload = (function() {
-                var canvas = document.getElementById('preview');
-                var ctx = canvas.getContext('2d');
-                var image = new Image();
-                image.src = fileReader.result;
-                image.onload = (function () {
-                    canvas.width = image.width;
-                    canvas.height = image.height;
-                    ctx.drawImage(image, 0, 0);
-                });
-            });
-            fileReader.readAsDataURL(obj.files[0]);
-        }
 
 
-        
-        </script>
+ 
 
 
-        
-        
-
-<main>
 
 
+
+	<div layout:fragment="content" class="text-left">
+	
+	
+	<main>
+		
 <h1>テスト作成フォーム</h1>
 
 <p>
     Preview:<br>
     <canvas id="preview" style="max-width:200px;"></canvas>
-    </p>
+ </p>
     
 
 
 
 
 <form th:action="@{/login/success}" method="post">
-
-    
-
-
-
     <label class="font-weight-bold">動画ファイル</label><br>
-    <input type="file" class="form-control" name="user_pass" accept='image/*' onchange="previewImage(this);"><br>
+    <input type="file" class="form-control" name="user_pass"  onchange="previewImage(this);"><br>
+
 
 
     <label class="font-weight-bold">サムネイル</label><br>
     <input type="file" class="form-control" name="user_pass" placeholder="java_part1.png"><br>
     <label class="font-weight-bold">タイトル</label><br>
     <input type="text" class="form-control" name="user_pass" placeholder="java入門 PART1"><br>
- 
+    <label class="font-weight-bold">コース</label><br>
     
    <label class="font-weight-bold">概要欄</label><br>
    <textarea name="text" id="" cols="30" rows="10"></textarea><br>
@@ -68,8 +53,16 @@
    </label>
 </form>
 
-    
-</main>
 
+	
+		  
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+		<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/9-6-2/js/9-6-2.js"></script>
+			
+	</main>
+	</div>
+	
 </body>
 </html>

@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+p{
+    margin-top:20px;  
+}
+
+a{
+    color:#333;
+    outline: none;
+}
+
+section{
+    padding:30px;
+}
+
+section:nth-child(2n){
+    background:#f3f3f3; 
+}
+
+.movie_content{
+    text-align: center;
+    margin-left: 35px;
+}
+/* div{display: flex;} */
+img{
+    /* max-width: 100%; */
+    height: auto;
+    width: 200px;
+    margin-top: 30px;
+}
+
+.box{
+    display: flex;  
+}
+
+
+
+
+.form-control{
+	width:30%;
+	
+}

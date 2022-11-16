@@ -24,10 +24,16 @@ public class TrainerController {
 		return "trainer/report_check";
 	}
 	
-	@GetMapping("/student-list/detail-student")
+	@GetMapping("/detail-student")
 	public String getDetailStudent() {
 		return "trainer/detail_student";
 	}
+	
+	@GetMapping("/my-test")
+	public String getMyTest() {
+		return "trainer/my_test";
+	}
+	
 	
 	@GetMapping("/create-test-form")
 	public String postCreateTestForm() {
@@ -39,14 +45,29 @@ public class TrainerController {
 		return "trainer/create_test_confirm";
 	}
 	
+	@PostMapping("/success")
+	public String getSuccess() {
+		return "trainer/success";
+	}
+	
 	@GetMapping("/my-video")
 	public String getMyVideo() {
 		return "video/my_video";
 	}
 	
-	@GetMapping("trainer-account")
+	@GetMapping("/add-video")
+	public String getAddVideo() {
+		return "video/add_video";
+	}
+	
+	@GetMapping("/trainer-account")
 	public String getTrainerAccount() {
 		return "trainer/trainer_account";
+	}
+	
+	@GetMapping("/trainer-edit")
+	public String getTrainerEdit() {
+		return "trainer/trainer_edit";
 	}
 	
 	

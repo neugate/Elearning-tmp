@@ -17,7 +17,7 @@
 										               
 					 	 <h1>テスト作成確認画面</h1>
 			                <hr>
-			               <form th:action="@{/register/success}" method="post">
+			               <form th:action="@{/trainer/success}" method="post">
 				    		<ul class="list-group">
 				    			<li class="list-group-item">問題１</li>
 				    			<li class="list-group-item">次のうちコンパイルエラーが起きるものはどれか。2つ選べ。</li>
@@ -29,13 +29,9 @@
 				    			<li class="list-group-item">char str = “a”; , char a = ‘xyz’;</li>
 				    		</ul>
 				    		<br>
-				    		<a class="btn btn-secondary" th:href="@{/register/form}">戻る</a>
+				    		<a class="btn btn-secondary" th:href="@{/trainer/create-test-form}">戻る</a>
 				    		<button type="submit" class="btn btn-primary">登録</button>
-			                   
-			              
-			             
-     
-		                
+			                </form>
 		            </div>
 		        </div>
 		       </div>

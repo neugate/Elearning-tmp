@@ -1,10 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/trainer_layout}">
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+<!--     <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
+    <title>Sample_learning</title>
 </head>
 <body>
-
+	<div layout:fragment="content" class="text-center">
+		<main>
+		    <div class="split">
+		        <div class="split-item split-left">
+		            <div class="split-left__inner">
+		                <h1>生徒日報確認</h1>
+		                
+										               
+						  <h5>新着情報</h5>
+						  <iframe src="news.html" width="600" height="100">
+						  </iframe><br>
+						  <br>
+						  <h5>新着情報2</h5>
+						  <iframe src="news.html" width="600" height="100">
+						  </iframe>
+						  
+						  
+              
+		                
+		            </div>
+		        </div>
+		       </div>
+		</main>    
+	</div>
 </body>
 </html>

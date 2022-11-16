@@ -8,9 +8,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/video") //URL接頭辞
 public class VideoController {
 
-	@GetMapping("/list")
-	public String getVideoList() {
-		return "video/list";
+	@GetMapping("/my-video")
+	public String getMyVideo() {
+		return "my_video";
+	}
+	
+	@GetMapping("/add-video")
+	public String getAddVideo() {
+		return "add_video";
 	}
 	
 	
