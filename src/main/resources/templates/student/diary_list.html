@@ -10,13 +10,16 @@
 <body>
 	<div layout:fragment="content" class="text-center">
 <h1>日報</h1>
+<a  th:href="@{/student/diary-edit}"><h2>新しく日報を書く</h2></a>
 	<table class="table">
 		<thead>
 			<tr>
 				<th>#</th>
 				<th scope="col">年/月/日</th>
 				<th scope="col">講義内容</th>
+				<th scope="col">確認</th>
 				<th scope="col">編集</th>
+				<th scope="col">削除</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -27,21 +30,92 @@
 				<th>
 				<form th:action="@{/student/diary-edit}" method="post">
 				<input type="hidden" name="diary-num">
-				<button class="btn btn-info">編集</button>
+				<button class="btn btn-info">確認</button>
 				</form>
 				</th>
-			</tr>
-			<tr>
-				<th>2</th>
-				<th scope="row">2022/11/1</th>
-				<th scope="row">××××</th>
 				<th>
 				<form th:action="@{/student/diary-edit}" method="post">
 				<input type="hidden" name="diary-num">
 				<button class="btn btn-info">編集</button>
 				</form>
 				</th>
+				<th>
+				<form th:action="@{/student/diary-edit}" method="post">
+				<input type="hidden" name="diary-num">
+				<button class="btn btn-info">削除</button>
+				</form>
+				</th>
 			</tr>
+			<tr>
+				<th>2</th>
+				<th scope="row">2022/11/15</th>
+				<th scope="row">〇〇〇〇</th>
+				<th>
+				<form th:action="@{/student/diary-edit}" method="post">
+				<input type="hidden" name="diary-num">
+				<button class="btn btn-info">確認</button>
+				</form>
+				</th>
+				<th>
+				<form th:action="@{/student/diary-edit}" method="post">
+				<input type="hidden" name="diary-num">
+				<button class="btn btn-info">編集</button>
+				</form>
+				</th>
+				<th>
+				<form th:action="@{/student/diary-edit}" method="post">
+				<input type="hidden" name="diary-num">
+				<button class="btn btn-info">削除</button>
+				</form>
+				</th>
+			</tr>
+			<tr>
+				<th>3</th>
+				<th scope="row">2022/11/11</th>
+				<th scope="row">〇〇〇〇</th>
+				<th>
+				<form th:action="@{/student/diary-edit}" method="post">
+				<input type="hidden" name="diary-num">
+				<button class="btn btn-info">確認</button>
+				</form>
+				</th>
+				<th>
+				<form th:action="@{/student/diary-edit}" method="post">
+				<input type="hidden" name="diary-num">
+				<button class="btn btn-info">編集</button>
+				</form>
+				</th>
+				<th>
+				<form th:action="@{/student/diary-edit}" method="post">
+				<input type="hidden" name="diary-num">
+				<button class="btn btn-info">削除</button>
+				</form>
+				</th>
+			</tr>
+			<tr>
+				<th>4</th>
+				<th scope="row">2022/11/11</th>
+				<th scope="row">〇〇〇〇</th>
+				<th>
+				<form th:action="@{/student/diary-edit}" method="post">
+				<input type="hidden" name="diary-num">
+				<button class="btn btn-info">確認</button>
+				</form>
+				</th>
+				<th>
+				<form th:action="@{/student/diary-edit}" method="post">
+				<input type="hidden" name="diary-num">
+				<button class="btn btn-info">編集</button>
+				</form>
+				</th>
+				<th>
+				<form th:action="@{/student/diary-edit}" method="post">
+				<input type="hidden" name="diary-num">
+				<button class="btn btn-info">削除</button>
+				</form>
+				</th>
+			</tr>
+	
 		</tbody>
 	</table>
 	</div>

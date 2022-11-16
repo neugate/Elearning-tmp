@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/student_layout}">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
+    <title>Sample_learning</title>
+</head>
+<body>
+		<div layout:fragment="content" class="text-center">
+		<main>
+		    <div class="split">
+		        <div class="split-item split-left">
+		            <div class="split-left__inner">
+		                <h1>動画検索ページ</h1>
+		                
+										               
+						  <h2>新着動画</h2>
+						  <iframe src="http://localhost:8080/student/dummy1" width="600" height="100">
+						  </iframe><br>
+						  <br>
+						  
+						  
+              
+		                
+		            </div>
+		        </div>
+		       </div>
+		       
+		       <div>
+		       <label><form th:action="@{#}" method="get">
+		         <button onclick="alert('検索結果がリスト表示！')" class="btn btn-primary"><input type="text" class="form-control" name="#" placeholder="検索キーワード">
+	           search</button></label>
+		       
+		       </div><br>
+		       
+		       
+		<table class="table">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th scope="col">更新日</th>
+				<th scope="col">タイトル</th>
+				<th scope="col">内容</th>
+				<th scope="col">再生時間</th>
+				<th scope="col">再生数</th>
+				<th scope="col">評価</th>
+				<th scope="col">ブックマーク数</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>1</th>
+				<th scope="row">2022/11/15</th>
+				<th scope="row">GitHub基礎</th>
+				<th scope="row">GitHubのアカウント作成からclone,push,pullまで</th>
+				<th scope="row">2h30m</th>
+				<th scope="row">123</th>
+				<th scope="row">7.8点</th>
+				<th scope="row">30</th>
+				
+			</tr>
+		</tbody>
+		</table>	
+		</main>    
+	</div>
+	
+
+</body>
+</html>

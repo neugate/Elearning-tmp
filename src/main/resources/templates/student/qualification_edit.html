@@ -10,7 +10,7 @@
 <body>
 	<div layout:fragment="content" class="text-left">
 		<h1>資格情報編集・登録</h1>
-		<form th:action="@{/student/sikaku-detail}" method="get">
+		<form th:action="@{/student/qualification-detail}" method="get">
 			<div class="mb-3">		
 				<label class="form-label">日付
 				<input type="text" id="diary_day" class="form-control" placeholder="2022/11/15"></label>
@@ -18,13 +18,13 @@
 			
 			<div class="mb-3">		
 				<label class="form-label">保有資格</label>
-				<input type="text" id="have_sikaku" class="form-control" placeholder="ITパスポート、JAVAシルバー、AWSクラウドプラクティショナー">
+				<input type="text" id="have_qualification" class="form-control" placeholder="ITパスポート、JAVAシルバー、AWSクラウドプラクティショナー">
 			</div>
 			
 			
 			<div class="mb-3">		
 				<label class="form-label">取得予定資格</label>
-				<input type="text" id="take_sikaku" class="form-control" placeholder="ITパスポート、JAVAシルバー、AWSクラウドプラクティショナー">
+				<input type="text" id="take_qualification" class="form-control" placeholder="ITパスポート、JAVAシルバー、AWSクラウドプラクティショナー">
 			</div>
 			<div class="mb-3">		
 				<label class="form-label">その他</label>

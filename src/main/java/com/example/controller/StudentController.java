@@ -8,6 +8,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/student") //URL接頭辞
 public class StudentController {
+	/**  なんとなくダミーページ   */
+	@GetMapping("/dummy1")
+	public String getDummy1() {
+		return "student/dummy1";
+	}
 	
 	@GetMapping("/index")
 	public String getStudentIndex() {
@@ -23,6 +28,11 @@ public class StudentController {
 	public String postDiaryEdit() {
 		return "student/diary_edit";
 	}
+	/**  日記編集ゲットVer作っちゃいました   */
+	@GetMapping("/diary-edit")
+	public String getDiaryEdit() {
+		return "student/diary_edit";
+	}
 	
 	@GetMapping("/test-list")
 	public String getTestList() {
@@ -36,9 +46,9 @@ public class StudentController {
 	public String getAccountEdit() {
 		return "student/account_edit";
 	}
-	@GetMapping("/sikaku-edit")
-	public String getSikakuEdit() {
-		return "student/sikaku_edit";
+	@GetMapping("/qualification-edit")
+	public String getQualificationEdit() {
+		return "student/qualification_edit";
 	}
 	@GetMapping("/jobsituation-edit")
 	public String getJobsituationEdit() {
@@ -49,13 +59,17 @@ public class StudentController {
 	public String getAccountDetail() {
 	    return "student/account_detail";
 	}
-	@GetMapping("/sikaku-detail")
-	public String getSikakuDetail() {
-	    return "student/sikaku_detail";
+	@GetMapping("/qualification-detail")
+	public String getQualificationDetail() {
+	    return "student/qualification_detail";
 	}
 	@GetMapping("/jobsituation-detail")
 	public String getJobsituationDetail() {
 	    return "student/jobsituation_detail";
+	}
+	@GetMapping("/video-search")
+	public String getVideoSearch() {
+		return "student/video_search";
 	}
 
 	
