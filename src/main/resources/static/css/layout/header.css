@@ -26,35 +26,10 @@
 	overflow-y: auto;
 	height:calc(100vh - 58px);
 }
-/**.footer{
+.footer{
 	position:absolute;
 	bottom: 0;
 	width:100%;
-}*/
-
-/** フッターかぶるので一旦お試しコピペ下記 問題なさげだけど変わってない説あり*/
-
-* {
-  box-sizing: border-box;
 }
- 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
- 
-body {
-  display: flex;
-  flex-direction: column;
-}
- 
-footer {
-  margin-top: auto;
-  padding: 20px 0;
-  color: #fff;
-  text-align: center;
-}
-
 
 
