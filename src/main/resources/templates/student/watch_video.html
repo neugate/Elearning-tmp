@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="ja"
-	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+<html xmlns:th="http://www.thymeleaf.org" lang="ja" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
 	layout:decorate="~{layout/student_layout}">
+
 <head>
-    <meta charset="UTF-8">
-    <link th:href="@{/css/student/student.css}" rel="stylesheet">
-    <title>Sample_learning - アカウント設定</title>
+	<meta charset="UTF-8">
+	<link th:href="@{/css/student/student.css}" rel="stylesheet">
+	<title>Sample_learning - アカウント設定</title>
 </head>
 
 
 
 <body>
-	
-	
-		<div layout:fragment="content" class="text-center">
+
+	<div layout:fragment="content" class="text-center">
 		<h1>動画視聴ページ</h1>
-		<video autoplay muted playsinline width="640px" height="360px" src="https://webliker.info/wp-content/uploads/2018/11/sample-video.mp4" controls>※現在の環境は動画再生に対応していません</video>
-		<h2>動画のタイトル</h2>
-		<div>
-		<p>情報色々</p>
-		</div>
- 
- 
-				<a class="nav-link" th:href="@{/student/index}">/student/indexへ</a><br><br><br>
-		
-		</div>
-		</body>
+		<video width="640px" height="360px" src="https://webliker.info/wp-content/uploads/2018/11/sample-video.mp4"
+			controls>※現在の環境は動画再生に対応していません</video>
+		<li class="row"><h2>動画のタイトル</h2></li>
+		<ul class="list-group">
+			<li class="list-group-item">Item#1</li>
+			<li class="list-group-item">Item#2</li>
+			<li class="list-group-item">Item#3</li>
+		</ul>
+
+		<a class="nav-link" th:href="@{/student/index}">マイページへ</a><br><br><br>
+
+	</div>
+</body>
+
 </html>
