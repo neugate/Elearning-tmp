@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/student_layout}">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
+	<title>Sample_learning</title>
+</head>
+
+<body>
+	<div layout:fragment="content" class="text-center">
+		<h1>テスト結果確認ページ</h1>
+		<p>Gitについての確認テスト<br>テスト番号20221111<br></p>
+		<label>受験者番号<input type="text" class="form-control" name="user_id" placeholder="xxxxxx"></label><br>
+
+		<div class="d-flex justify-content-center">
+
+
+			<div id="js-question" class="alert alert-primary" role="alert">
+				テストの結果は　80/100　正答率は80%でした。<br>直近７日間の順位は30位です。<br>
+			</div>
+			
+		</div>
+		<button type="button" onclick="alert('Tweetしました。')"
+				class="btn btn-primary mb-2">結果をTweetする。</button>
+
+		<ul class="list-group">
+			<li class="list-group-item">問題番号[23654]<br>正答：1　解答：1　○</li>
+			<li class="list-group-item">問題番号[23654]<br>正答：2　解答：1　×</li>
+			<li class="list-group-item">問題番号[23654]<br>正答：3　解答：1　×</li>
+			<li class="list-group-item">問題番号[23654]<br>正答：1　解答：1　○</li>
+			<li class="list-group-item">問題番号[23654]<br>正答：1　解答：1　○</li>
+			<li class="list-group-item">問題番号[23654]<br>正答：1　解答：1　○</li>
+			<li class="list-group-item">問題番号[23654]<br>正答：1　解答：1　○</li>
+			<li class="list-group-item">問題番号[23654]<br>正答：1　解答：1　○</li>
+			<li class="list-group-item">問題番号[23654]<br>正答：1　解答：1　○</li>
+			<li class="list-group-item">問題番号[23654]<br>正答：1　解答：1　○</li>
+			<li class="list-group-item">問題番号[23654]<br>正答：1　解答：1　○</li>
+			<li class="list-group-item"><a th:href="@{#}">＜＜前の動画</a>___<a th:href="@{#}">次の動画＞＞</a></li>
+			<li class="list-group-item"><a th:href="@{/student/take-test}">テスト受験ページ</a></li>
+		</ul>
+
+
+		<a th:href="@{/student/index}">マイページへ</a><br><br><br><br>
+
+	</div>
+
+
+</body>
+
+</html>

@@ -89,4 +89,12 @@ public class StudentController {
 	public String getTakeTest() {
 		return "student/take_test";
 	}
+	@GetMapping("/test-result")
+	public String getTestResult() {
+		return "student/test_result";
+	}
+	@PostMapping("/test-result")
+	public String postTestResult() {
+		return "student/test_result";
+	}
 }

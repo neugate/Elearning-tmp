@@ -16,12 +16,12 @@
 		<!--問題文と選択肢START-->
 		<div class="container">
 
-			<div class="jumbotron mt-5">
+			<div class="jumbotron mt-2">
 				<div class="d-flex justify-content-center">
 
 
-					<div id="js-question" class="alert alert-primary" role="alert">
-						問題番号[23654]以下のプログラムを実行した場合に表示される値として、正しいものを解答群から1つ選びなさい。<br>
+					<div id="js-question" class="alert alert-primary text-left" role="alert">
+						問題番号[23654]<br>以下のプログラムを実行した場合に表示される値として、正しいものを解答群から1つ選びなさい。<br>
 
 						class SampleCalc {<br>
 						int calc(int x, int y){<br>
@@ -40,29 +40,29 @@
 				</div>
 
 				<div id="js-items" class="d-flex justify-content-center">
-					<div class="m-2">
+					<div class="text-left m-2">
 						<div class="form-check">
 							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 							<label class="form-check-label" for="flexCheckDefault">
-								Default checkbox
+								1.	何も表示されない
 							</label>
 						</div>
 						<div class="form-check">
 							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 							<label class="form-check-label" for="flexCheckDefault">
-								Default checkbox
+								2.	300
 							</label>
 						</div>
 						<div class="form-check">
 							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 							<label class="form-check-label" for="flexCheckDefault">
-								Default checkbox
+								3.	400
 							</label>
 						</div>
 						<div class="form-check">
 							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 							<label class="form-check-label" for="flexCheckDefault">
-								Default checkbox
+								4.	500
 							</label>
 						</div>
 					</div>
@@ -74,17 +74,17 @@
 			<!--問題文と選択肢START-->
 		<div class="container">
 
-			<div class="jumbotron mt-5">
+			<div class="jumbotron mt-2">
 				<div class="d-flex justify-content-center">
 
 
-					<div id="js-question" class="alert alert-primary" role="alert">
-						問題番号[23654]アクセス修飾子とカプセル化の説明として、誤っているものを解答群からすべて選びなさい。
+					<div id="js-question" class="alert alert-primary text-left" role="alert">
+						問題番号[23654]<br>アクセス修飾子とカプセル化の説明として、誤っているものを解答群からすべて選びなさい。
 					</div>
 				</div>
 
-				<div id="js-items" class="d-flex justify-content-center">
-					<div class="m-2">
+				<div id="js-items" class="d-flex text-left">
+					<div class="m-2 ">
 						<div class="form-check">
 							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 							<label class="form-check-label" for="flexCheckDefault">
@@ -126,7 +126,7 @@
 				</div>
 
 				<div id="js-items" class="d-flex justify-content-center">
-					<div class="m-2">
+					<div class="text-left m-2">
 						<div class="form-check">
 							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
 							<label class="form-check-label" for="flexCheckDefault">
@@ -155,11 +155,13 @@
 				</div>
 			</div>
 			<!--問題文と選択肢END-->
-			<button type="button" onclick="alert('テストを終了します')"
-				class="btn btn-primary">結果を送信</button><br><br><br><br><br><br><br><br><br><br>
-				<a th:href="@{/student/index}">マイページへ</a><br><br><br><br>
+			<form th:action="@{/student/test-result}" method="post">
+			
+			<button type="hidden" onclick="alert('テストを終了します')"
+				class="btn btn-primary">結果を送信</button></form><br><br><br><br><br><br><br><br><br><br>
 
-		</div>
+
+				<a th:href="@{/student/index}">マイページへ</a><br><br><br><br>
 
 
 </body>
