@@ -67,6 +67,10 @@ public class StudentController {
 	public String getJobsituationDetail() {
 	    return "student/jobsituation_detail";
 	}
+	@GetMapping("/watch-video")
+	public String getWatchVideo() {
+		return "student/watch_video";
+	}
 	@GetMapping("/video-search")
 	public String getVideoSearch() {
 		return "student/video_search";
