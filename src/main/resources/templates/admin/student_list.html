@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="ja"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	layout:decorate="~{layout/trainer_layout}">
+	layout:decorate="~{layout/admin_layout}">
 <head>
     <meta charset="UTF-8">
+    <link th:href="@{/css/admin/admin.css}" rel="stylesheet"/>
 <!--     <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
     <title>Sample_learning</title>
 </head>
@@ -13,7 +14,23 @@
 		    <div class="split">
 		        <div class="split-item split-left">
 		            <div class="split-left__inner">
-		                <h1>講師用マイページ</h1>
+		                <h1>受講生一覧</h1>
+		                
+		                
+		                <div class="search">
+		                
+		                <form action="" method="post">
+		                <input type="text" placeholder="山田太郎">
+		                <input type="submit" value="検索">
+		                 </form>
+		                </div>
+		                
+		                <div class=register>
+		                
+		               
+		                <a class="btn btn-secondary" th:href="@{/trainer/create-test-form}">受講生追加</a>
+		                </div>
+		               
 		                <table class="table">
 				        <thead>
 				          <tr>
@@ -23,7 +40,7 @@
 				            <th scope="col">入校日</th>
 				            <th scope="col">ステータス</th>
 				            <th scope="col"></th>
-				             <th scope="col"></th>
+				            <th scope="col"></th>
 				          
 				          </tr>
 				        </thead>
@@ -34,8 +51,9 @@
 				            <td>〇〇Python</td>
 				            <td>y/m/d</td>
 				            <td></td>
-				            <td> <a class="btn btn-info" th:href="@{/trainer/detail-student}">確認</a></td>
-				           
+				            <td> <a class="btn btn-info" th:href="@{/admin/detail-student}">編集</a></td>
+				            
+				            <td><button>削除</button></td>
 				            
 				          </tr>
 				          <tr>
@@ -44,8 +62,8 @@
 				            <td>〇〇Python</td>
 				            <td>y/m/d</td>
 				            <td></td>
-				            <td> <a class="btn btn-info" >確認</a></td>
-				            
+				            <td> <a class="btn btn-info" >編集</a></td>
+				            <td><button>削除</button></td>
 				           
 				          </tr>
 				          <tr>
@@ -54,14 +72,14 @@
 				            <td>〇〇Python</td>
 				            <td>y/m/d</td>
 				            <td></td>
-				            <td> <a class="btn btn-info" >確認</a></td>
-				            
+				            <td> <a class="btn btn-info" >編集</a></td>
+				            <td> <a class="btn btn-info" >編集</a></td>
 				            
 				           
 				          </tr>
 				        </tbody>
 				      </table>
-					  <a class="btn btn-secondary" th:href="@{/trainer/index}">戻る</a>
+					  <a class="btn btn-secondary" th:href="@{/admin/index}">戻る</a>
 		                
 		            </div>
 		        </div>

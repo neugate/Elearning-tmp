@@ -19,14 +19,29 @@ public class TrainerController {
 		return "trainer/student_list";
 	}
 	
-	@GetMapping("/report-check")
-	public String getReportCheck() {
-		return "trainer/report_check";
-	}
-	
 	@GetMapping("/detail-student")
 	public String getDetailStudent() {
 		return "trainer/detail_student";
+	}
+	
+	@GetMapping("/student-profile")
+	public String getStudentProfaile() {
+		return "trainer/student_profile";
+	}
+	
+	@GetMapping("/jobsituation")
+	public String getJobsituation() {
+		return "trainer/jobsituation";
+	}
+	@GetMapping("/content-status")
+	public String getContentStatus() {
+		return "trainer/content_status";
+	}
+	
+	
+	@GetMapping("/report-check")
+	public String getReportCheck() {
+		return "trainer/report_check";
 	}
 	
 	@GetMapping("/my-test")
@@ -43,6 +58,10 @@ public class TrainerController {
 	@PostMapping("/create-test-confirm")
 	public String getCreateTestConfirm() {
 		return "trainer/create_test_confirm";
+	}
+	@GetMapping("/detail-test")
+	public String getDetailTest() {
+		return "trainer/detail_test";
 	}
 	
 	@PostMapping("/success")
@@ -69,6 +88,7 @@ public class TrainerController {
 	public String getTrainerEdit() {
 		return "trainer/trainer_edit";
 	}
+	
 	
 	
 }

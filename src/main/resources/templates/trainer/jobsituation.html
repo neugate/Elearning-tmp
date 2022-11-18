@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/trainer_layout}">
+<head>
+    <meta charset="UTF-8">
+<!--     <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
+    <title>Sample_learning</title>
+</head>
+<body>
+	<div layout:fragment="content" class="text-center">
+		<main>
+		    <div class="split">
+		        <div class="split-item split-left">
+		            <div class="split-left__inner">
+		                <h1>就職状況確認</h1>
+		                
+		               		
+		                <div class="container">    
+					    <table class="table">
+
+					        <tbody>
+					           
+					         <tr>
+					            <th style="width:20%;"scope="row">名前</th>
+					            <td style="width:20%;">山田太郎</td>
+					            <td></td>
+					        </tr>
+					        <tr>
+					            <th scope="row">希望職種</th>
+					            <td>開発エンジニア希望</td>
+					            <td></td>
+					        
+					        </tr>
+					        
+					        <tr>
+					            <th scope="row">求人サービス</th>
+					            <td>リクルートエージェント</td>
+					            <td>マイナビ</td>
+					            <td>type</td>
+					            <td></td>
+					            <td></td>
+					        
+					        </tr>
+					        
+					        <tr>
+					            <th scope="row">内定状況</th>
+					            <td>(株)〇〇</td>
+					            <td></td>
+					            <td></td>
+					            <td></td>
+					        
+					        </tr>
+					        <tr>
+					            <th scope="row">面接状況</th>
+					            <td>y/m/d</td>
+					            <td>(株)〇〇</td>
+					            <td>１次面接</td>
+					            <td>通過</td>
+					        </tr>
+					        <tr>
+					            <th scope="row">応募状況</th>
+					            <td>y/m/d</td>
+					            <td>(株)〇〇</td>
+					            <td>〇〇職</td>
+					            <td></td>
+					        </tr>
+					        <tr>
+					            <th scope="row"></th>
+					            <td>y/m/d</td>
+					            <td>(株)〇〇</td>
+					            <td>〇〇職</td>
+					            <td></td>
+					        </tr>
+					        
+					       
+					        <tr>
+					            <th scope="row">応募書類作成状況</th>
+					            <td>履歴書</td>
+					            <td>作成中</td>
+					             <td></td>
+					            <td></td>
+					        </tr>
+					        <tr>
+					
+					            <th scope="row"></th>
+					            <td>職務経歴書</td>
+					            <td>作成済み</td>
+					             <td></td>
+					            <td></td>
+					
+					        </tr>
+					        
+					        </tbody>
+					    </table>
+					    <hr>
+					    <a class="btn btn-info" th:href="@{/trainer/detail-student}">戻る</a>
+					    
+					       
+		                </div>
+		            </div>
+		        </div>
+	       </div>
+		</main>    
+	</div>
+</body>
+</html>

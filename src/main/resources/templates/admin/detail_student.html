@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="ja"
 	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-	layout:decorate="~{layout/trainer_layout}">
+	layout:decorate="~{layout/admin_layout}">
 <head>
     <meta charset="UTF-8">
 <!--     <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
@@ -16,15 +16,17 @@
 		                <h1>生徒詳細</h1>
 		                
 		                <h3>○○さんの詳細ページ</h3>
-		                <br>
-		                <h3><a  th:href="@{/trainer/student-profile}">プロフィール</a></h3><br>
-		                <h3><a  th:href="@{/trainer/content-status}">受講状況一覧</a></h3><br>
-		                <h3><a  th:href="@{/trainer/jobsituation}">就職状況</a></h3><br>
-		                <h3><a  th:href="@{/trainer/report}">日報一覧</a></h3><br>
+		                <h3><a  th:href="@{/admin/student-profile}">プロフィール</a></h3>
+		                  <h3><a  th:href="@{/admin/status}">受講状況一覧</a></h3>
+		                <h3><a  th:href="@{/admin/jobsituation}">就職状況</a></h3>
+		                <h3><a  th:href="@{/admin/report}">日報一覧</a></h3>
 		                
 		                
 		              
-			
+					   <a class="btn btn-info" th:href="@{/admin/account-edit}">戻る</a></td>
+					    <a class="btn btn-info" th:href="@{/admin/account-edit}">編集</a></td>
+					   <a class="btn btn-info" th:href="@{/admin/delete-account}">削除</a></td>
+					    
 					       
 		                </div>
 		            </div>

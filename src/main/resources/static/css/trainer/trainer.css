@@ -3,36 +3,21 @@
 h1,h2{
     
     margin-top: 5%;
-}
-
-
-
-.collapse{margin-left: 70%;}
-
-img {
-    border-radius: 50%; 
-    border: 3px solid white;
-
-}
-.user{
-    height: 30px;
-    width: auto;
-    margin-top: 8px;
-    margin-left: 5px;
+    text-align:center;
+    
     
 }
-/* main{height: 100%;} */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+
+
+
+.test_table{
+	width:40%;
+	text-align:center;
 }
 
-.container{
-    width: 100px;
-    margin-top: 200px;
+.box{
+	
+	display:flex;
+	
 }
-
-th{
-    width: 15%;
-}
+.edit{text-align:center;}
