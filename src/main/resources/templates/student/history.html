@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/student_layout}">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
+	<title>Sample_learning</title>
+</head>
+
+<body>
+	<div layout:fragment="content" class="text-center">
+		<h1>実績確認ページ</h1>
+		<div class="d-flex justify-content-center">
+
+			<div id="js-question" class="alert alert-primary" role="alert">
+				先月のテストの平均順位は30.8位<br><br>
+			</div>
+		</div>
+		<p>-----------<br>-------------<br></p>
+		<label>----------------------<input type="text" class="form-control" name="user_id"
+				placeholder="xxxxxx"></label><br>
+
+		<ul class="list-group">
+			<li class="list-group-item">テスト番号[23654]　正答率：100　解答：1　○</li>
+			<li class="list-group-item">テスト番号[23654]　正答率：100　解答：1　○</li>
+			<li class="list-group-item">動画番号[23654]　内容：</li>
+			<li class="list-group-item">テスト番号[23654]　正答率：100　解答：1　○</li>
+			<li class="list-group-item">テスト番号[23654]　正答率：100　解答：1　○</li>
+			<li class="list-group-item">動画番号[23654]　</li>
+			<li class="list-group-item"><a th:href="@{#}">＜＜前の動画</a>___<a th:href="@{#}">次の動画＞＞</a></li>
+			<li class="list-group-item"><a th:href="@{/student/take-test}">テスト受験ページ</a></li>
+		</ul>
+
+
+		<a th:href="@{/student/index}">マイページへ</a><br><br><br><br>
+
+	</div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/student_layout}">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
+	<title>Sample_learning</title>
+</head>
+
+<body>
+	<div layout:fragment="content" class="text-center">
+		<h1>テスト受験ページ</h1>
+		<p>Gitについての確認テスト<br>テスト番号20221111<br></p>
+		<label>受験者番号<input type="text" class="form-control" name="user_id" placeholder="xxxxxx"></label><br>
+		<!--問題文と選択肢START-->
+		<div class="container">
+
+			<div class="jumbotron mt-2">
+				<div class="d-flex justify-content-center">
+
+
+					<div id="js-question" class="alert alert-primary text-left" role="alert">
+						問題番号[23654]<br>以下のプログラムを実行した場合に表示される値として、正しいものを解答群から1つ選びなさい。<br>
+
+						class SampleCalc {<br>
+						int calc(int x, int y){<br>
+						return x + y;<br>
+						}<br>
+						}<br><br>
+
+						class SampleUseCalc {<br>
+						public static void main(String[] args){<br>
+						SampleCalc m;<br>
+						m = new SampleCalc();<br>
+						int a = m.calc(200, 300);//メソッド「calc」の呼び出し<br>
+						}<br>
+						}"<br>
+					</div>
+				</div>
+
+				<div id="js-items" class="d-flex justify-content-center">
+					<div class="text-left m-2">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								1.	何も表示されない
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								2.	300
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								3.	400
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								4.	500
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--問題文と選択肢END-->
+
+			
+			<!--問題文と選択肢START-->
+		<div class="container">
+
+			<div class="jumbotron mt-2">
+				<div class="d-flex justify-content-center">
+
+
+					<div id="js-question" class="alert alert-primary text-left" role="alert">
+						問題番号[23654]<br>アクセス修飾子とカプセル化の説明として、誤っているものを解答群からすべて選びなさい。
+					</div>
+				</div>
+
+				<div id="js-items" class="d-flex text-left">
+					<div class="m-2 ">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								アクセス修飾子「public」がついたフィールドやメソッドは、そのクラス内部からしかアクセスできない
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								外部に公開するフィールドに対しては、アクセスするための手段を提供する
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								外部から値をフィールドにセットするためのメソッドを「セッター」という
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								フィールドをpublicにするとフィールドに不正な値がセットされるのを防ぐことができる
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--問題文と選択肢END-->
+			<!--問題文と選択肢START-->
+		<div class="container">
+
+			<div class="jumbotron mt-5">
+				<div class="d-flex justify-content-center">
+
+
+					<div id="js-question" class="alert alert-primary" role="alert">
+						A simple primary alert—check it out!
+					</div>
+				</div>
+
+				<div id="js-items" class="d-flex justify-content-center">
+					<div class="text-left m-2">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Default checkbox
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Default checkbox
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Default checkbox
+							</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+							<label class="form-check-label" for="flexCheckDefault">
+								Default checkbox
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--問題文と選択肢END-->
+			<form th:action="@{/student/test-result}" method="post">
+			
+			<button type="hidden" onclick="alert('テストを終了します')"
+				class="btn btn-primary">結果を送信</button></form><br><br><br><br><br><br><br><br><br><br>
+
+
+				<a th:href="@{/student/index}">マイページへ</a><br><br><br><br>
+
+
+</body>
+
+</html>
