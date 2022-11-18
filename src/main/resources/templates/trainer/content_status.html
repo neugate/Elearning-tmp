@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/trainer_layout}">
+<head>
+    <meta charset="UTF-8">
+<!--     <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
+    <title>Sample_learning</title>
+</head>
+<body>
+	<div layout:fragment="content" class="text-center">
+		<main>
+		    <div class="split">
+		        <div class="split-item split-left">
+		            <div class="split-left__inner">
+		                <h1>受講状況一覧</h1>
+						 <div class="container">    
+					    <table class="table">
+						  <thead>
+						    <tr>
+						    　<th scope="col"></th>
+						      <th scope="col">Content</th>
+						      <th scope="col">動画</th>
+						      <th scope="col">ステータス</th>
+						      <th scope="col">テスト</th>
+						      <th scope="col">点数</th>
+						      <th scope="col">テスト詳細</th>
+						      <th scope="col"></th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">1</th>
+						      <td>xxxxxxx</td>
+						      <td>Java基礎講座part1</td>
+						      <td>視聴済</td>
+						      <td>Java基礎テスト①</td>
+						      <td>90点</td>
+						      <td><a class="btn btn-secondary" th:href="@{/trainer/student-profile}">確認</a></td>
+						      <td><a class="btn btn-secondary" th:href="@{/trainer/student-profile}">承認</a></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">2</th>
+						      <td>xxxxxxx</td>
+						      <td>Java繰り返し処理</td>
+						      <td></td>
+						      <td>Java基礎テスト②</td>
+						      <td></td>
+						      <td><a class="btn btn-secondary" th:href="@{/trainer/student-profile}">確認</a></td>
+						      <td><a class="btn btn-secondary" th:href="@{/trainer/student-profile}">承認</a></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">3</th>
+						      <td>xxxxxxx</td>
+						      <td>Java分岐処理</td>
+						      <td></td>
+						      <td>Java基礎テスト③</td>
+						      <td></td>
+						      <td><a class="btn btn-secondary" th:href="@{/trainer/student-profile}">確認</a></td>
+						      <td><a class="btn btn-secondary" th:href="@{/trainer/student-profile}">承認</a></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">4</th>
+						      <td>xxxxxxx</td>
+						      <td>Javaインスタンスとクラス</td>
+						      <td></td>
+						      <td>Java基礎テスト④</td>
+						      <td></td>
+						      <td><a class="btn btn-secondary" th:href="@{/trainer/student-profile}">確認</a></td>
+						      <td><a class="btn btn-secondary" th:href="@{/trainer/student-profile}">承認</a></td>
+						    </tr>
+						  </tbody>
+						</table>
+					    <hr>
+					    <a class="btn btn-secondary" th:href="@{/trainer/index}">戻る</a>
+					    
+					       
+		                </div>
+		            </div>
+		        </div>
+	       </div>
+		</main>    
+	</div>
+</body>
+</html>
