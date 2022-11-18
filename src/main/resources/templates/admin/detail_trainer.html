@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/admin_layout}">
+<head>
+    <meta charset="UTF-8">
+<!--     <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
+    <title>Sample_learning</title>
+</head>
+<body>
+	<div layout:fragment="content" class="text-center">
+		<main>
+		    <div class="split">
+		        <div class="split-item split-left">
+		            <div class="split-left__inner">
+		                <h1>講師詳細マイページ</h1>
+		                
+		               
+							                <div class="container">    
+					    <table class="table">
+					        
+					      
+					        <tbody>
+					         
+					        <tr>
+					            <th scope="row">所属</th>
+					            <td>(株)〇〇</td>
+					            <td></td>
+					        
+					        </tr>  
+					         <tr>
+					            <th style="width:20%;"scope="row">名前</th>
+					            <td style="width:20%;">山田太郎</td>
+					            <td></td>
+					        </tr>
+					        
+					        <tr>
+					            <th scope="row">担当コース名</th>
+					            <td>〇〇Python</td>
+					            <td></td>
+					        
+					        </tr>
+
+					        
+					        <tr>
+					            <th scope="row">資格</th>
+					            <td>ITパスポート</td>
+					            <td>y/m/d取得</td>
+					        </tr>
+					        
+					        <tr>
+					            <th scope="row">職歴</th>
+					            <td>〇〇〇〇</td>
+					            <td></td>
+					            </tr>
+					            <tr>
+					            <th></th>
+					            <td>〇〇〇〇</td>
+					            <td></td>
+					        </tr>
+					        <tr>
+					            <th></th>
+					            <td>〇〇〇〇</td>
+					            <td></td>
+					        </tr>
+					        <tr>
+					            <th></th>
+					            <td>〇〇〇〇</td>
+					            <td></td>
+					        </tr>
+					        <tr>
+					            <th scope="row">就職状況</th>
+					            <td>△△△△</td>
+					            <td></td>
+					        </tr>
+					        
+					
+					        </tr>
+					        
+					        </tbody>
+					    </table>
+					    <hr>
+					   <a class="btn btn-info" th:href="@{/admin/account-edit}">戻る</a></td>
+					    <a class="btn btn-info" th:href="@{/admin/account-edit}">編集</a></td>
+					   <a class="btn btn-info" th:href="@{/admin/delete-account}">削除</a></td>
+					    
+					       
+		                </div>
+		            </div>
+		        </div>
+	       </div>
+		</main>    
+	</div>
+</body>
+</html>

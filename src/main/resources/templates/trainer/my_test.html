@@ -15,15 +15,66 @@
 		            <div class="split-left__inner">
 		                <h1>Myテスト一覧</h1>
 		                
+		                
+		                
+		             
 										               
 						  <h5>新着情報</h5>
 						  <iframe src="news.html" width="600" height="100">
 						  </iframe><br>
 						  <br>
-						  <h5>新着情報2</h5>
-						  <iframe src="news.html" width="600" height="100">
-						  </iframe>
 						  
+						    <a class="btn btn-secondary" th:href="@{/trainer/create-test-form}">テスト作成フォーム</a>
+						 <table class="table">
+				        <thead>
+				          <tr>
+				            <th scope="col"></th>
+				            <th scope="col">タイトル</th>
+				            <th scope="col">言語</th>
+				            <th scope="col">作成日</th>
+				            <th scope="col">備考</th>
+				            <th scope="col"></th>
+				             <th scope="col"></th>
+				          
+				          </tr>
+				        </thead>
+				        <tbody>
+				          <tr>
+				            <th scope="row">1</th>
+				            <td>パソコン基礎テスト</td>
+				            <td></td>
+				            <td>y/m/d</td>
+				            <td></td>
+				            <td> <a class="btn btn-info" th:href="@{/trainer/detail-test}">編集</a></td>
+				            <td> <a class="btn btn-info" th:href="@{/trainer/detail-student}">削除</a></td>
+				          </tr>
+				         　
+				         <tr>
+				            <th scope="row">2</th>
+				            <td>Java基礎テスト</td>
+				            <td>Java</td>
+				            <td>y/m/d</td>
+				            <td></td>
+				            <td> <a class="btn btn-info" th:href="@{/trainer/detail-student}">編集</a></td>
+				            <td> <a class="btn btn-info" th:href="@{/trainer/detail-student}">削除</a></td>
+				          </tr>
+				            
+				           
+				          <tr>
+				            <th scope="row">3</th>
+				            <td>Servlet/JSPテスト</td>
+				            <td>Java</td>
+				            <td>y/m/d</td>
+				            <td></td>
+				            <td> <a class="btn btn-info" th:href="@{/trainer/detail-student}">編集</a></td>
+				            <td> <a class="btn btn-info" th:href="@{/trainer/detail-student}">削除</a></td>
+				          </tr>
+				            
+				           
+				         
+				        </tbody>
+				      </table>
+					  <a class="btn btn-secondary" th:href="@{/trainer/index}">戻る</a>
 						  
               
 		                
