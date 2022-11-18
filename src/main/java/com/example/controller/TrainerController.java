@@ -39,9 +39,14 @@ public class TrainerController {
 	}
 	
 	
-	@GetMapping("/report-check")
-	public String getReportCheck() {
-		return "trainer/report_check";
+	@GetMapping("/report-list")
+	public String getReportList() {
+		return "trainer/report_list";
+	}
+	
+	@GetMapping("/report-detail")
+	public String getReportDetail() {
+		return "trainer/report_detail";
 	}
 	
 	@GetMapping("/my-test")
@@ -49,6 +54,21 @@ public class TrainerController {
 		return "trainer/my_test";
 	}
 	
+	@GetMapping("/test-index")
+	public String getTestindex() {
+		return "trainer/test_index";
+	}
+	
+	
+	@GetMapping("/test-result")
+	public String getTestResult() {
+		return "trainer/test_result";
+	}
+	
+	@GetMapping("/test-list")
+	public String getTestlist() {
+		return "trainer/test_list";
+	}
 	
 	@GetMapping("/create-test-form")
 	public String postCreateTestForm() {
@@ -62,6 +82,10 @@ public class TrainerController {
 	@GetMapping("/detail-test")
 	public String getDetailTest() {
 		return "trainer/detail_test";
+	}
+	@GetMapping("/edit-test")
+	public String getEditTest() {
+		return "trainer/edit_test";
 	}
 	
 	@PostMapping("/success")
