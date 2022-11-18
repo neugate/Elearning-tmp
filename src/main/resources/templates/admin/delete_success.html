@@ -4,6 +4,7 @@
 	layout:decorate="~{layout/admin_layout}">
 <head>
     <meta charset="UTF-8">
+    <link th:href="@{/css/admin/admin.css}" rel="stylesheet"/>
 <!--     <link th:href="@{/css/student/student.css}" rel="stylesheet"> -->
     <title>Sample_learning</title>
 </head>
@@ -13,17 +14,11 @@
 		    <div class="split">
 		        <div class="split-item split-left">
 		            <div class="split-left__inner">
-		                <h1>管理者ページ</h1>
+		                <h1>削除が完了しました</h1>
 		                
-										               
-						  <h5>受講生・新着情報</h5>
-						  <iframe src="news.html" width="600" height="100">
-						  </iframe><br>
-						  <br>
-						  <h5>講師・新着情報</h5>
-						  <iframe src="news.html" width="600" height="100">
-						  </iframe>
-
+		                <h2><a th:href="@{/admin/index}">トップページへ</a></h2>
+    </div>
+		              
 		                
 		            </div>
 		        </div>
