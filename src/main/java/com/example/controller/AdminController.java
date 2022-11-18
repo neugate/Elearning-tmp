@@ -21,17 +21,17 @@ public class AdminController {
 	public String getStudentprofile() {
 		return "admin/student_profile";
 	}
-	@GetMapping("/detail-student")
-	public String getDetailStudent() {
-		return "admin/detail_student";
+	@GetMapping("/student-detail")
+	public String getlStudentDetail() {
+		return "admin/student_detail";
 	}
 	@GetMapping("/account-edit")
 	public String getAccountEdit() {
 		return "admin/account_edit";
 	}
-	@GetMapping("/delete-account")
-	public String getDeleteAccount() {
-		return "admin/delete_account";
+	@GetMapping("/account-delete")
+	public String getAccountDelete() {
+		return "admin/account_delete";
 	}
 	@GetMapping("/delete-success")
 	public String getDeleteSuccess() {
@@ -45,6 +45,10 @@ public class AdminController {
 	@GetMapping("/detail-trainer")
 	public String getDetailTrainer() {
 		return "admin/detail_trainer";
+	}
+	@GetMapping("/report-list")
+	public String getrepotList() {
+		return "admin/report_list";
 	}
 	
 	
