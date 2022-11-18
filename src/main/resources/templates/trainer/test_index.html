@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/trainer_layout}">
+<head>
+    <meta charset="UTF-8">
+ <link th:href="@{/css/trainer/trainer.css}" rel="stylesheet">
+    <title>Sample_learning</title>
+</head>
+<body>
+	<div layout:fragment="content" class="text-center">
+		<main>
+		    <div class="split">
+		        <div class="split-item split-left">
+		            <div class="split-left__inner">
+		                <h1>テスト一覧</h1>
+		                
+		                <div class="container">
+			                <a class="nav-link" th:href="@{/trainer/test-list}">
+			                	<img class="lang_icon"src="/css/images/c.png" >
+			                </a>
+			                 <a class="nav-link" th:href="@{/trainer/test-list}">
+			               	 <img class="lang_icon"src="/css/images/java.png">
+			                </a>
+			                 <a class="nav-link" th:href="@{/trainer/test-list}">
+			                	<img class="lang_icon"src="/css/images/python.png">
+			                </a>
+			                 <a class="nav-link" th:href="@{/trainer/test-list}">
+			                 	<img class="lang_icon"src="/css/images/html.png">
+			                 </a>
+		                </div>
+		             
+					
+		            </div>
+		        </div>
+		       </div>
+		</main>    
+	</div>
+</body>
+</html>

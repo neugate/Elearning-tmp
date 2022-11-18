@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layout/trainer_layout}">
+<head>
+    <meta charset="UTF-8">
+    <link th:href="@{/css/trainer/trainer.css}" rel="stylesheet">
+    <title>Sample_learning</title>
+</head>
+<body>
+	<div layout:fragment="content" >
+		<main>
+		    <div class="split">
+		        <div class="split-item split-left">
+		            <div class="split-left__inner">
+		                
+										               
+					 	 <h1>テスト更新画面</h1>
+			                <hr>
+			                 <form th:action="@{/trainer/success}" method="post">
+				                <div class="box">
+					               <div class="test_table">
+							    		<ul class="list-group">
+							    			<li class="list-group-item"><input class="test_update"type="text" name="user_name" placeholder="Java〇〇テストその1"></li>
+							    			<li class="list-group-item"> <input class="test_update"type="text" name="user_name" placeholder="問1.次のうちコンパイルエラーが起きるものはどれか。2つ選べ。"></li>
+							    			<li class="list-group-item">
+							    			 <input type="text" name="user_name" placeholder="1.char str = “a”;">
+							    			  <input type="text" name="user_name" placeholder="2.char c = ‘c’;">
+							    			   <input type="text" name="user_name" placeholder="3.char c = ‘\uabcd’;　">
+							    			    <input type="text"  name="user_name" placeholder="4.char a = ‘xyz’;"></li>
+							    			<li class="list-group-item"> <input type="text" class="test_update"name="user_name" placeholder="解答：char str = “a”; , char a = ‘xyz’;"></li>
+							    			
+							    		</ul>
+							    		<br>
+					             	</div>
+					             	<div class="test_table">
+							    		<ul class="list-group">
+							    			<li class="list-group-item"><input class="test_update"type="text" name="user_name" placeholder="Java〇〇テストその2"></li>
+							    			<li class="list-group-item"> <input class="test_update"type="text" name="user_name" placeholder="問1.次のうちコンパイルエラーが起きるものはどれか。2つ選べ。"></li>
+							    			<li class="list-group-item">
+							    			 <input type="text" name="user_name" placeholder="1.char str = “a”;">
+							    			  <input type="text" name="user_name" placeholder="2.char c = ‘c’;">
+							    			   <input type="text" name="user_name" placeholder="3.char c = ‘\uabcd’;　">
+							    			    <input type="text"  name="user_name" placeholder="4.char a = ‘xyz’;"></li>
+							    			<li class="list-group-item"> <input type="text" class="test_update"name="user_name" placeholder="解答：char str = “a”; , char a = ‘xyz’;"></li>
+							    			
+							    		</ul>
+							    		<br>
+					             	</div>
+					             	<div class="test_table">
+							    		<ul class="list-group">
+							    			<li class="list-group-item"><input class="test_update"type="text" name="user_name" placeholder="Java〇〇テストその1"></li>
+							    			<li class="list-group-item"> <input class="test_update"type="text" name="user_name" placeholder="問1.次のうちコンパイルエラーが起きるものはどれか。2つ選べ。"></li>
+							    			<li class="list-group-item">
+							    			 <input type="text" name="user_name" placeholder="1.char str = “a”;">
+							    			  <input type="text" name="user_name" placeholder="2.char c = ‘c’;">
+							    			   <input type="text" name="user_name" placeholder="3.char c = ‘\uabcd’;　">
+							    			    <input type="text"  name="user_name" placeholder="4.char a = ‘xyz’;"></li>
+							    			<li class="list-group-item"> <input type="text" class="test_update"name="user_name" placeholder="解答：char str = “a”; , char a = ‘xyz’;"></li>
+							    			
+							    		</ul>
+							    		<br>
+					             	</div>
+					             </div>
+					             	
+					             <div class="box">
+					               <div class="test_table">
+							    		<ul class="list-group">
+							    			<li class="list-group-item"><input class="test_update"type="text" name="user_name" placeholder="Java〇〇テストその1"></li>
+							    			<li class="list-group-item"> <input class="test_update"type="text" name="user_name" placeholder="問1.次のうちコンパイルエラーが起きるものはどれか。2つ選べ。"></li>
+							    			<li class="list-group-item">
+							    			 <input type="text" name="user_name" placeholder="1.char str = “a”;">
+							    			  <input type="text" name="user_name" placeholder="2.char c = ‘c’;">
+							    			   <input type="text" name="user_name" placeholder="3.char c = ‘\uabcd’;　">
+							    			    <input type="text"  name="user_name" placeholder="4.char a = ‘xyz’;"></li>
+							    			<li class="list-group-item"> <input type="text" class="test_update"name="user_name" placeholder="解答：char str = “a”; , char a = ‘xyz’;"></li>
+							    			
+							    		</ul>
+							    		<br>
+					             	</div>
+					             	<div class="test_table">
+							    		<ul class="list-group">
+							    			<li class="list-group-item"><input class="test_update"type="text" name="user_name" placeholder="Java〇〇テストその1"></li>
+							    			<li class="list-group-item"> <input class="test_update"type="text" name="user_name" placeholder="問1.次のうちコンパイルエラーが起きるものはどれか。2つ選べ。"></li>
+							    			<li class="list-group-item">
+							    			 <input type="text" name="user_name" placeholder="1.char str = “a”;">
+							    			  <input type="text" name="user_name" placeholder="2.char c = ‘c’;">
+							    			   <input type="text" name="user_name" placeholder="3.char c = ‘\uabcd’;　">
+							    			    <input type="text"  name="user_name" placeholder="4.char a = ‘xyz’;"></li>
+							    			<li class="list-group-item"> <input type="text" class="test_update"name="user_name" placeholder="解答：char str = “a”; , char a = ‘xyz’;"></li>
+							    			
+							    		</ul>
+							    		<br>
+					             	</div>
+					             	<div class="test_table">
+							    		<ul class="list-group">
+							    			<li class="list-group-item"><input class="test_update"type="text" name="user_name" placeholder="Java〇〇テストその1"></li>
+							    			<li class="list-group-item"> <input class="test_update"type="text" name="user_name" placeholder="問1.次のうちコンパイルエラーが起きるものはどれか。2つ選べ。"></li>
+							    			<li class="list-group-item">
+							    			 <input type="text" name="user_name" placeholder="1.char str = “a”;">
+							    			  <input type="text" name="user_name" placeholder="2.char c = ‘c’;">
+							    			   <input type="text" name="user_name" placeholder="3.char c = ‘\uabcd’;　">
+							    			    <input type="text"  name="user_name" placeholder="4.char a = ‘xyz’;"></li>
+							    			<li class="list-group-item"> <input type="text" class="test_update"name="user_name" placeholder="解答：char str = “a”; , char a = ‘xyz’;"></li>
+							    			
+							    		</ul>
+							    		<br>
+					             	</div>
+					             	
+					          
+					             	
+					             </div>
+					             
+					             <div class="edit">
+				    			<input type="submit" class="btn btn-primary" value="更新">
+			    				</div>
+				             	
+				          
+				             </form>
+			             
+			             
+			              
+		           	</div>
+	        	</div>
+	       </div>
+		</main>    
+	</div>
+</body>
+</html>
