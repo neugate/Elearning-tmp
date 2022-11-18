@@ -97,4 +97,8 @@ public class StudentController {
 	public String postTestResult() {
 		return "student/test_result";
 	}
+	@GetMapping("/history")
+	public String getHistory() {
+		return "student/history";
+	}
 }
