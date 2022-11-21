@@ -5,6 +5,7 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
 <link th:href="@{/css/layout/header.css}" rel="stylesheet"/>
+<link th:href="@{/css/layout/admin_layout.css}" rel="stylesheet"/>
 <script th:href="@{/webjars/jquery/jquery.min.js}" defer></script>
 <script th:href="@{/webjars/bootstrap/js/bootstrap.min.js}" defer></script>
 <title></title>
@@ -25,15 +26,10 @@
 		<div class="row">
 			<div class="col-sm-10 offset-sm-2 main">
 				<div layout:fragment="content"></div>
+	<!-- フッター -->
+	<footer layout:replace="~{layout/footer::footer}" class="footer"></footer>
 			</div>
 		</div>
 	</div>
-	<!-- フッター -->
-	<footer class="footer">
-		<div class="container">
-	<hr>
-			<p class="text-center text-muted">Copyright ©jibun-note.com All rights reserved.</p>
-		</div>
-	</footer>
 </body>
 </html>
