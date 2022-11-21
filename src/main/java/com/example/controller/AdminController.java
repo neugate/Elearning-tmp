@@ -41,15 +41,27 @@ public class AdminController {
 	public String getTrainerList() {
 		return "admin/trainer_list";
 	}
-	
 	@GetMapping("/detail-trainer")
 	public String getDetailTrainer() {
 		return "admin/detail_trainer";
 	}
-	@GetMapping("/report-list")
-	public String getrepotList() {
-		return "admin/report_list";
+	
+	@GetMapping("/trainer-create")
+	public String getTrainerCreate() {
+		return "admin/trainer_create";
 	}
 	
+	@GetMapping("/report-list")
+	public String getrepotList() {
+		return "admin/student_report_list";
+	}
 	
+	@GetMapping("/jobsituation")
+	public String getJobSituation(){
+		return "admin/student_jobsituation";
+	}
+	@GetMapping("/status")
+	public String getStatus() {
+		return "admin/student_status";
+	}
 }
