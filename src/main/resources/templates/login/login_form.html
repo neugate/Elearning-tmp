@@ -4,8 +4,8 @@
 	layout:decorate="~{layout/layout}">
 <head>
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+<link th:href="@{/css/login/login_form.css}" rel="stylesheet"/>
 <script th:href="@{/webjars/jquery/jquery.min.js}" defer></script>
 <script th:href="@{/webjars/bootstrap/js/bootstrap.min.js}" defer></script>
     <title>Sample_learning</title>
@@ -13,10 +13,11 @@
 <body>
 	<div layout:fragment="content" class="text-center">
 	<h1>ログイン</h1>
+	<hr>
 	<div class="container">
 	<div class="box">
 	<div class="row">
-			<div class="col-md-6 bg-light">
+			<div class="col-md-6">
 				<div class="well">
 					<form th:action="@{/login/success}" method="post">
 						<div class="form-group text-left">
@@ -33,11 +34,17 @@
 				</div>
 			</div>
 		<div class="col-md-6">
-			会員登録について
+			<h4 class="text-left">会員登録について</h4>
+			<br>
 			<ul>
 				<li></li>
 				<li></li>
+				<li></li>
+				<li></li>
 			</ul>
+			<br>
+			<br>
+			<button th:fref="@{/register/form}" class="btn btn-info btn-block">新規作成はこちら</button>
  		</div>
 	</div>
 	</div>
