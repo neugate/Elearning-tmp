@@ -4,12 +4,13 @@
 	layout:decorate="~{layout/layout}">
 <head>
     <meta charset="UTF-8">
+    <link th:href="@{/css/register/register.css}" rel="stylesheet">
     <title>Sample_learning</title>
 </head>
 <body>
 	<div layout:fragment="content" class="text-center">
-	<h1>ログインが完了いたしました</h1>
-    <h2><a th:href="@{/student/index}">マイページへ</a></h2>
+		<h1>更新が完了しました</h1>
+	    <h2><a th:href="@{/trainer/index}">トップページへ</a></h2>
 	</div>
 </body>
 </html>
