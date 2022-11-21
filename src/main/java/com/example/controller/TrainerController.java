@@ -103,6 +103,10 @@ public class TrainerController {
 	public String getAddVideo() {
 		return "video/add_video";
 	}
+	@PostMapping("/confirm-video")
+	public String postConfirmVideo() {
+		return "video/confirm_video";
+	}
 	
 	@GetMapping("/trainer-account")
 	public String getTrainerAccount() {

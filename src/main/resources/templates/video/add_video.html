@@ -27,7 +27,7 @@
 
 
 
-<form th:action="@{/login/success}" method="post">
+<form th:action="@{/trainer/confirm-video}" method="post">
     <label class="font-weight-bold">動画ファイル</label><br>
     <input type="file" class="form-control" name="user_pass"  onchange="previewImage(this);"><br>
 
@@ -42,7 +42,7 @@
    <label class="font-weight-bold">概要欄</label><br>
    <textarea name="text" id="" cols="30" rows="10"></textarea><br>
    <label id="sub1">
-    <button type="submit" class="btn btn-success" name="__send" id="__send">登録</button>
+    <button type="submit" class="btn btn-success">登録</button>
    </label>
 </form>
 

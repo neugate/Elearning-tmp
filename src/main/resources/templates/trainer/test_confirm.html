@@ -17,20 +17,16 @@
 										               
 					 	 <h1>テスト作成確認画面</h1>
 			                <hr>
-			                <img src="/css/images/thubnail.png" alt="movie">
 			               <form th:action="@{/trainer/success}" method="post">
 				    		<ul class="list-group">
-				    			<li class="list-group-item">動画ファイル</li>
-				    			<li class="list-group-item">〇〇○.mp4</li>
-				    			<li class="list-group-item">サムネイル</li>
-				    			<li class="list-group-item">〇〇○.png</li>
-				    			<li class="list-group-item">タイトル</li>
-				    			<li class="list-group-item">Java入門　PART1 </li>
-				    			<li class="list-group-item">概要欄</li>
-				    			<li class="list-group-item">
-				    			xxxxxxxxxxxxx<br>
-				    			xxxxxxxxxxxxx
-				    			</li>
+				    			<li class="list-group-item">問題１</li>
+				    			<li class="list-group-item">次のうちコンパイルエラーが起きるものはどれか。2つ選べ。</li>
+				    			<li class="list-group-item">1.char str = “a”;</li>
+				    			<li class="list-group-item">2.char c = ‘c’;</li>
+				    			<li class="list-group-item">3.char c = ‘\uabcd’;</li>
+				    			<li class="list-group-item">4.char a = ‘xyz’; </li>
+				    			<li class="list-group-item">回答</li>
+				    			<li class="list-group-item">char str = “a”; , char a = ‘xyz’;</li>
 				    		</ul>
 				    		<br>
 				    		<a class="btn btn-secondary" th:href="@{/trainer/create-test-form}">戻る</a>
