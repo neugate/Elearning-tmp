@@ -19,9 +19,9 @@ public class TrainerController {
 		return "trainer/student_list";
 	}
 	
-	@GetMapping("/detail-student")
-	public String getDetailStudent() {
-		return "trainer/detail_student";
+	@GetMapping("/student-detail")
+	public String getStudentDetail() {
+		return "trainer/student_detail";
 	}
 	
 	@GetMapping("/student-profile")
@@ -38,10 +38,14 @@ public class TrainerController {
 		return "trainer/content_status";
 	}
 	
-	
 	@GetMapping("/report-list")
-	public String getReportList() {
+	public String getReporList() {
 		return "trainer/report_list";
+	}
+	
+	@GetMapping("/report-all")
+	public String getReporAll() {
+		return "trainer/report_all";
 	}
 	
 	@GetMapping("/report-detail")
@@ -70,28 +74,25 @@ public class TrainerController {
 		return "trainer/test_list";
 	}
 	
-	@GetMapping("/create-test-form")
-	public String postCreateTestForm() {
-		return "trainer/create_test_form";
+	@GetMapping("/test-form")
+	public String postTestForm() {
+		return "trainer/test_form";
 	}
 	
-	@PostMapping("/create-test-confirm")
-	public String getCreateTestConfirm() {
-		return "trainer/create_test_confirm";
+	@PostMapping("/test-confirm")
+	public String getTestConfirm() {
+		return "trainer/test_confirm";
 	}
-	@GetMapping("/detail-test")
-	public String getDetailTest() {
-		return "trainer/detail_test";
+	@GetMapping("/test-detail")
+	public String getTestDetail() {
+		return "trainer/test_detail";
 	}
-	@GetMapping("/edit-test")
-	public String getEditTest() {
-		return "trainer/edit_test";
+	@GetMapping("/test-edit")
+	public String getTestEdit() {
+		return "trainer/test_edit";
 	}
 	
-	@PostMapping("/success")
-	public String getSuccess() {
-		return "trainer/success";
-	}
+	
 	
 	@GetMapping("/my-video")
 	public String getMyVideo() {
@@ -111,6 +112,20 @@ public class TrainerController {
 	@GetMapping("/trainer-edit")
 	public String getTrainerEdit() {
 		return "trainer/trainer_edit";
+	}
+	
+	@PostMapping("/success")
+	public String getSuccess() {
+		return "trainer/success";
+	}
+	@PostMapping("/update")
+	public String getupdate() {
+		return "trainer/update";
+	}
+	
+	@GetMapping("/delete")
+	public String getDelete() {
+		return "trainer/delete";
 	}
 	
 	
