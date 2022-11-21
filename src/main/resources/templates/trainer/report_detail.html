@@ -47,12 +47,25 @@
 					            <td>xxxxxxxx?</td>
 					            
 					        </tr>
+					         <tr>
+					            <th scope="row">返信</th>
+					            <td></td>
+					            
+					        </tr>
 					        
 					        
 					        </tbody>
 					    </table>
-					   
-					     <a class="btn btn-secondary" th:href="@{/trainer/index}">戻る</a>
+					    <form th:action="@{/trainer/success}" method="post">
+					   		<textarea rows="4" cols="105"></textarea><br>
+					   		<a class="btn btn-secondary" th:href="@{/trainer/report-all}">戻る</a>
+					   		<button type="submit" class="btn btn-success"　formaction="@{/trainer/update">編集</button>
+					   		<button type="submit" class="btn btn-success">返信</button>
+					   		
+					   	
+					   	</form>
+					   	 
+					     
 						  
 						</div>  
               			
